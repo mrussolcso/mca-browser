@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def clean_and_parse_statute(url):
-    """Fetches and parses an individual MCA statute page into structured JSON."""
+    """Fetches and parses an MCA statute page cleanly into structured JSON."""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -18,48 +18,43 @@ def clean_and_parse_statute(url):
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 1. PURGE UI NAVIGATION & DOM NOISE
-    # Strips out navigation bars, headers, footers, and scripts before reading text
-    for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form']):
+    # 1. PURGE UI & NAVIGATION DOM ELEMENTS
+    for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'a']):
         element.decompose()
 
-    # 2. EXTRACT LEGISLATIVE HISTORY & DISCLAIMERS
+    # 2. EXTRACT LEGISLATIVE HISTORY
     history = ""
     for p in soup.find_all('p'):
-        p_text = p.get_text().strip()
-        if p_text.startswith("History:"):
-            history = p_text.replace("History:", "").strip()
-            p.decompose()
-        elif "Disclaimer:" in p_text or "Montana Code Annotated" in p_text:
+        text = p.get_text().strip()
+        if text.startswith("History:"):
+            history = text.replace("History:", "").strip()
             p.decompose()
 
-    # Get remaining raw lines from cleaned DOM
-    raw_lines = [line.strip() for line in soup.get_text().splitlines() if line.strip()]
+    # 3. EXTRACT BODY PARAGRAPHS
+    paragraphs = [p.get_text().strip() for p in soup.find_all('p') if p.get_text().strip()]
+    if not paragraphs:
+        return None
 
-    # Filter out residual header breadcrumbs
-    clean_lines = []
-    for line in raw_lines:
-        if any(keyword in line for keyword in ["Toggle navigation", "MCA Contents", "Search Help", "Part Contents"]):
-            continue
-        clean_lines.append(line)
+    full_text = " ".join(" ".join(paragraphs).split())
 
-    full_body = " ".join(clean_lines)
+    # Filter disclaimers
+    full_text = re.sub(r'Disclaimer:.*$', '', full_text, flags=re.IGNORECASE).strip()
 
-    # 3. MATCH SECTION ID, TITLE, AND BODY
-    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_body)
+    # 4. MATCH SECTION ID & CATCHLINE TITLE
+    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_text)
     if not match:
         return None
 
     section_id = match.group(1).strip()
-    title = match.group(2).strip()
+    # Truncate title at common header artifacts if present
+    clean_title = match.group(2).split("Montana Code Annotated")[0].split("MCA")[0].strip()
     raw_content = match.group(3).strip()
 
-    # 4. TOKENIZE BY STRUCTURAL MARKERS
-    # Split text into tokens based on markers like (1), (a), (i)
+    # 5. TOKENIZE BY STRUCTURAL SUBSECTION MARKERS
     pattern = r'(\((?:\d+|[a-z]+|[A-Z]+)\))'
     tokens = re.split(pattern, raw_content)
 
-    raw_subsections = []
+    subsections = []
     current_buffer = ""
 
     for token in tokens:
@@ -67,10 +62,9 @@ def clean_and_parse_statute(url):
         if not token_str:
             continue
         
-        # Check if token is a structural marker
         if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)$', token_str):
             if current_buffer:
-                raw_subsections.append(current_buffer.strip())
+                subsections.append(current_buffer.strip())
             current_buffer = token_str
         else:
             if current_buffer:
@@ -79,19 +73,15 @@ def clean_and_parse_statute(url):
                 current_buffer = token_str
 
     if current_buffer:
-        raw_subsections.append(current_buffer.strip())
+        subsections.append(current_buffer.strip())
 
-    # 5. MERGE STACKED PARENT MARKERS
-    # Combines bare markers like "(3) (a)" directly with their text payload "(i) An offender..."
+    # 6. MERGE BARE PARENT MARKERS (e.g., "(3) (a)")
     final_subsections = []
     i = 0
-    while i < len(raw_subsections):
-        curr = raw_subsections[i]
-        
-        # If line is just a marker without sentence body
-        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(raw_subsections):
-            merged = f"{curr} {raw_subsections[i+1]}"
-            final_subsections.append(merged)
+    while i < len(subsections):
+        curr = subsections[i]
+        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(subsections):
+            final_subsections.append(f"{curr} {subsections[i+1]}")
             i += 2
         else:
             final_subsections.append(curr)
@@ -99,7 +89,7 @@ def clean_and_parse_statute(url):
 
     return {
         "id": section_id,
-        "title": title,
+        "title": clean_title,
         "source_url": url,
         "subsections": final_subsections,
         "history": history,
