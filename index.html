@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montana Code Annotated Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Montana Code Annotated (MCA) Browser</h1>
+    </header>
 
+    <main class="container">
+        <article id="statute-card" class="card">
+            <div id="loading">Loading statute data...</div>
+            
+            <header class="statute-header">
+                <h2 id="statute-id"></h2>
+                <h3 id="statute-title"></h3>
+            </header>
+
+            <div id="statute-subsections" class="statute-body"></div>
+
+            <section id="bond-container" class="bond-section hidden">
+                <h4>Associated Bond Book Charges</h4>
+                <div id="bond-charges"></div>
+            </section>
+
+            <footer class="statute-footer">
+                <p><strong>Legislative History:</strong> <span id="statute-history"></span></p>
+                <p><a id="source-link" href="#" target="_blank" rel="noopener">View Official State MCA Source Page</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
