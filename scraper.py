@@ -6,7 +6,6 @@ import requests
 from bs4 import BeautifulSoup
 
 def clean_and_parse_statute(url):
-    """Parses MCA pages by relying on the state site's native line breaks."""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -18,67 +17,59 @@ def clean_and_parse_statute(url):
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Get lines preserved by HTML structure
-    text = soup.get_text()
-    raw_lines = [line.strip() for line in text.splitlines() if line.strip()]
+    # 1. STRIP NAVIGATION & DISCLAIMERS FROM DOM
+    # Remove top navs, headers, footers, and disclaimers before parsing text
+    for junk in soup.find_all(['nav', 'header', 'footer', 'script', 'style']):
+        junk.decompose()
 
-    # Filter out disclaimers and page clutter
-    clean_lines = []
+    # 2. EXTRACT LEGISLATIVE HISTORY
     history = ""
-    for line in raw_lines:
-        if line.lower().startswith("disclaimer:"):
-            break
-        if line.startswith("History:"):
-            history = line.replace("History:", "").strip()
-            break
-        clean_lines.append(line)
+    for p in soup.find_all('p'):
+        p_text = p.get_text().strip()
+        if p_text.startswith("History:"):
+            history = p_text.replace("History:", "").strip()
+            p.decompose()  # Remove from DOM so it doesn't leak into body content
+        elif "Disclaimer:" in p_text:
+            p.decompose()
 
-    full_body = " ".join(clean_lines)
-
-    # Match ID, Title, and Raw Body Text
-    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_body)
+    # 3. LOCATE CATCHLINE & SECTION ID
+    # MCA pages use standard paragraph structures for statute body
+    all_text = soup.get_text()
+    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', all_text, re.DOTALL)
     if not match:
         return None
 
     section_id = match.group(1).strip()
     title = match.group(2).strip()
-    content = match.group(3).strip()
+    raw_body = match.group(3).strip()
 
-    # Split ONLY on structural markers at the start of new provisions:
-    # Pattern looks for (1), (a), (i) preceded by space/start and followed by space + Capital/Letter/Quote
-    pattern = r'(?=\s*\((?:\d+|[a-z]+|[A-Z]+)\)\s+[A-Z"\(])'
-    raw_subsections = re.split(pattern, content)
+    # Strip any remaining top nav string artifacts before section ID
+    clean_body = ' '.join(raw_body.split())
 
+    # 4. STRUCTURAL BREAK LOOKAHEAD
+    # Splits ONLY on true subsection starts: (1), (a), (i) at boundary positions
+    pattern = r'(?=\b\((?:\d+|[a-z]+|[A-Z]+)\)\s+[A-Z"\(])'
+    chunks = [c.strip() for c in re.split(pattern, clean_body) if c.strip()]
+
+    # 5. MERGE BARE PARENT MARKERS
+    # Fixes "(3) (a)" sitting on its own line above "(i)"
     subsections = []
-    for sub in raw_subsections:
-        cleaned = sub.strip()
-        if not cleaned:
-            continue
-        
-        # If a line is just an empty marker like "(3) (a)", merge with previous or handle cleanly
-        if subsections and re.match(r'^\((?:\d+|[a-z]+)\)\s*\((?:\d+|[a-z]+)\)$', subsections[-1]):
-            subsections[-1] = f"{subsections[-1]} {cleaned}"
-        else:
-            subsections.append(cleaned)
-
-    # Final cleanup pass for remaining stacked markers like "(3) (a)"
-    final_subsections = []
     i = 0
-    while i < len(subsections):
-        curr = subsections[i]
-        # Check for bare marker lines like "(3) (a)"
-        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)(?:\s*\((?:\d+|[a-z]+|[A-Z]+)\))?$', curr) and i + 1 < len(subsections):
-            final_subsections.append(f"{curr} {subsections[i+1]}")
+    while i < len(chunks):
+        curr = chunks[i]
+        # If current line is just a marker like "(3) (a)" or "(3)", merge with next block
+        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(chunks):
+            subsections.append(f"{curr} {chunks[i+1]}")
             i += 2
         else:
-            final_subsections.append(curr)
+            subsections.append(curr)
             i += 1
 
     return {
         "id": section_id,
         "title": title,
         "source_url": url,
-        "subsections": final_subsections,
+        "subsections": subsections,
         "history": history,
         "bond_charges": []
     }
