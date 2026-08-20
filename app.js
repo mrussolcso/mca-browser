@@ -55,35 +55,26 @@ async function fetchStatute(statuteId) {
 function renderStatute(data) {
     document.getElementById("loading").classList.add("hidden");
     
-    document.getElementById("statute-id").innerText = `MCA ${data.id}`;
-    document.getElementById("statute-title").innerText = data.title;
+    document.getElementById("statute-id").innerText = `MCA ${data.law_id}`;
+    document.getElementById("statute-title").innerText = data.title_full;
     document.getElementById("statute-history").innerText = data.history || "N/A";
-    
-    const sourceLink = document.getElementById("source-link");
-    if (sourceLink) {
-        sourceLink.href = data.source_url;
-    }
 
-    // Render formatted subsections
     const container = document.getElementById("statute-subsections");
     container.innerHTML = ""; 
 
-    data.subsections.forEach(line => {
+    data.subsections.forEach(item => {
+        // Skip parent containers that have no direct body text
+        if (!item.text) return;
+
         const p = document.createElement("p");
-        p.className = "subsection-item";
-        
-        const trimmed = line.trim();
+        p.id = item.path; // Enables direct URL linking like #45-5-206#(4)(b)(iii)
+        p.className = `subsection-item indent-${item.indent}`;
 
-        // Level 2 indent: (a), (b), (c)
-        if (/^\([a-z]\)/.test(trimmed)) {
-            p.classList.add("indent-1");
-        } 
-        // Level 3 indent: (i), (ii), (iii)
-        else if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)/.test(trimmed)) {
-            p.classList.add("indent-2");
-        }
+        // Get the last marker segment from path for visual display (e.g., "(4)(b)(iii)" -> "(iii)")
+        const pathSegments = item.path.match(/\((?:[0-9]+|[a-z]+|[A-Z]+)\)/g) || [];
+        const label = pathSegments[pathSegments.length - 1] || "";
 
-        p.innerText = trimmed;
+        p.innerText = `${label} ${item.text}`;
         container.appendChild(p);
     });
 }
