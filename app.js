@@ -60,7 +60,9 @@ function renderStatute(data) {
     document.getElementById("statute-history").innerText = data.history || "N/A";
     
     const sourceLink = document.getElementById("source-link");
-    sourceLink.href = data.source_url;
+    if (sourceLink) {
+        sourceLink.href = data.source_url;
+    }
 
     // Render formatted subsections
     const container = document.getElementById("statute-subsections");
@@ -70,12 +72,18 @@ function renderStatute(data) {
         const p = document.createElement("p");
         p.className = "subsection-item";
         
-        // Add additional indent CSS if subsection starts with letter options like (a), (i)
-        if (/^\([a-z]\)/i.test(line)) {
-            p.classList.add("nested");
+        const trimmed = line.trim();
+
+        // Level 2 indent: (a), (b), (c)
+        if (/^\([a-z]\)/.test(trimmed)) {
+            p.classList.add("indent-1");
+        } 
+        // Level 3 indent: (i), (ii), (iii)
+        else if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)/.test(trimmed)) {
+            p.classList.add("indent-2");
         }
-        
-        p.innerText = line;
+
+        p.innerText = trimmed;
         container.appendChild(p);
     });
 }
