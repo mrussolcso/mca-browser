@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def clean_and_parse_statute(url):
-    """Fetches and parses an individual MCA statute page."""
+    """Fetches and parses an individual MCA statute page with smart subsection formatting."""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -30,7 +30,7 @@ def clean_and_parse_statute(url):
         history = history_match.group(1).strip()
         clean_text = re.sub(r'History:\s*.*', '', clean_text).strip()
 
-    # 3. Match Section ID, Catchline, and Body
+    # 3. Match Section ID, Title, and Raw Body
     match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', clean_text)
     if not match:
         return None
@@ -39,15 +39,51 @@ def clean_and_parse_statute(url):
     title = match.group(2).strip()
     raw_content = match.group(3).strip()
 
-    # 4. Format subsections into clean lists
-    formatted_content = re.sub(r'(\((?:\d+|[a-z]+|[A-Z]+)\))', r'\n\1', raw_content).strip()
-    subsections = [line.strip() for line in formatted_content.split('\n') if line.strip()]
+    # 4. PRESERVE CROSS-REFERENCES
+    # Temporarily hide parentheses in phrases like "subsection (4)(b)" or "subsections (3) and (4)"
+    protected_content = re.sub(
+        r'(subsections?|sections?|titles?|chapters?|parts?)\s+(\(\d+\)|\([a-z]+\))+',
+        lambda m: m.group(0).replace('(', '___OPEN___').replace(')', '___CLOSE___'),
+        raw_content,
+        flags=re.IGNORECASE
+    )
+    # Also protect "subsection (4)(b)" style compound references
+    protected_content = re.sub(
+        r'(\(\d+\))(\([a-z]+\))',
+        lambda m: m.group(1) + m.group(2).replace('(', '___OPEN___').replace(')', '___CLOSE___'),
+        protected_content
+    )
+
+    # 5. SPLIT GENUINE SUBSECTIONS
+    # Insert newlines before genuine subsection markers: (1), (a), (i), etc.
+    formatted_content = re.sub(r'(\((?:\d+|[a-z]+|[A-Z]+)\))', r'\n\1', protected_content)
+
+    # Restore hidden parentheses
+    formatted_content = formatted_content.replace('___OPEN___', '(').replace('___CLOSE___', ')')
+
+    # 6. CLEAN UP STANDALONE PARENT MARKERS
+    # Merge orphaned parent markers like "(3)" directly with the following "(a)" line
+    raw_lines = [line.strip() for line in formatted_content.split('\n') if line.strip()]
+    cleaned_subsections = []
+    
+    i = 0
+    while i < len(raw_lines):
+        line = raw_lines[i]
+        # Check if this line is just a bare marker like "(3)" or "(4)"
+        if re.match(r'^\(\d+\)$', line) and (i + 1) < len(raw_lines):
+            next_line = raw_lines[i + 1]
+            # Merge with next line: "(3) (a) An offender..."
+            cleaned_subsections.append(f"{line} {next_line}")
+            i += 2  # Skip next line since we merged it
+        else:
+            cleaned_subsections.append(line)
+            i += 1
 
     return {
         "id": section_id,
         "title": title,
         "source_url": url,
-        "subsections": subsections,
+        "subsections": cleaned_subsections,
         "history": history,
         "bond_charges": []
     }
