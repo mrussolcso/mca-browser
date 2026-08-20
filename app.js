@@ -1,14 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Load MCA 45-5-201 by default
-    fetchStatute("45-5-201");
+    loadStatuteIndex();
 });
 
+async function loadStatuteIndex() {
+    const selector = document.getElementById("statute-select");
+    
+    try {
+        const response = await fetch("./data/index.json");
+        if (!response.ok) throw new Error("Could not load statute index.");
+        
+        const manifest = await response.json();
+        selector.innerHTML = ""; // Clear loading message
+
+        manifest.forEach(item => {
+            const option = document.createElement("option");
+            option.value = item.id;
+            option.textContent = `MCA ${item.id}: ${item.title}`;
+            selector.appendChild(option);
+        });
+
+        // Event listener to change statute when selection changes
+        selector.addEventListener("change", (e) => {
+            if (e.target.value) {
+                fetchStatute(e.target.value);
+            }
+        });
+
+        // Load the first statute in the manifest by default
+        if (manifest.length > 0) {
+            fetchStatute(manifest[0].id);
+        }
+
+    } catch (error) {
+        selector.innerHTML = `<option>Error loading index</option>`;
+        document.getElementById("loading").innerText = `Error loading statute index: ${error.message}`;
+    }
+}
+
 async function fetchStatute(statuteId) {
+    document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("loading").innerText = "Loading statute data...";
+
     try {
         const response = await fetch(`./data/${statuteId}.json`);
-        if (!response.ok) {
-            throw new Error(`Statute ${statuteId} not found.`);
-        }
+        if (!response.ok) throw new Error(`Statute ${statuteId} not found.`);
         
         const data = await response.json();
         renderStatute(data);
@@ -29,7 +64,7 @@ function renderStatute(data) {
 
     // Render formatted subsections
     const container = document.getElementById("statute-subsections");
-    container.innerHTML = ""; // Clear existing
+    container.innerHTML = ""; 
 
     data.subsections.forEach(line => {
         const p = document.createElement("p");
