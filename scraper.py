@@ -1,25 +1,29 @@
 import os
 import json
 import re
-from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-def clean_and_parse_statute(url):
-    """Fetches and parses an MCA statute page cleanly into structured JSON."""
+def clean_and_parse_45_5_206():
+    """Fetches MCA 45-5-206, strips DOM clutter, and outputs clean structured JSON."""
+    url = "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html"
     headers = {'User-Agent': 'Mozilla/5.0'}
+    
+    print(f"Fetching statute from: {url}")
     try:
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code != 200:
-            return None
+            print(f"Failed to fetch page. Status code: {response.status_code}")
+            return
     except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return None
+        print(f"Error fetching URL: {e}")
+        return
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 1. PURGE UI & NAVIGATION DOM ELEMENTS
-    for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'a']):
+    # 1. REMOVE ALL DOM NOISE & UI NAVIGATION
+    # Strips out nav bars, headers, footers, forms, and scripts before reading text
+    for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'iframe']):
         element.decompose()
 
     # 2. EXTRACT LEGISLATIVE HISTORY
@@ -29,32 +33,40 @@ def clean_and_parse_statute(url):
         if text.startswith("History:"):
             history = text.replace("History:", "").strip()
             p.decompose()
+        elif "Disclaimer:" in text or "Montana Code Annotated" in text:
+            p.decompose()
 
-    # 3. EXTRACT BODY PARAGRAPHS
+    # Get remaining paragraph blocks from cleaned DOM
     paragraphs = [p.get_text().strip() for p in soup.find_all('p') if p.get_text().strip()]
     if not paragraphs:
-        return None
+        print("Error: No paragraph content found on page.")
+        return
 
     full_text = " ".join(" ".join(paragraphs).split())
 
-    # Filter disclaimers
+    # Filter out disclaimers or trailing metadata
     full_text = re.sub(r'Disclaimer:.*$', '', full_text, flags=re.IGNORECASE).strip()
 
-    # 4. MATCH SECTION ID & CATCHLINE TITLE
+    # 3. EXTRACT SECTION ID, TITLE, AND BODY CONTENT
     match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_text)
     if not match:
-        return None
+        print("Error: Could not match statute structure (ID / Title / Body).")
+        return
 
     section_id = match.group(1).strip()
-    # Truncate title at common header artifacts if present
-    clean_title = match.group(2).split("Montana Code Annotated")[0].split("MCA")[0].strip()
+    
+    # Strip any header breadcrumb leak from the catchline title
+    raw_title = match.group(2).strip()
+    clean_title = raw_title.split("Montana Code Annotated")[0].split("MCA")[0].strip()
+    
     raw_content = match.group(3).strip()
 
-    # 5. TOKENIZE BY STRUCTURAL SUBSECTION MARKERS
-    pattern = r'(\((?:\d+|[a-z]+|[A-Z]+)\))'
+    # 4. TOKENIZE BODY BY STRUCTURAL SUBSECTION MARKERS
+    # Splitting on markers like (1), (a), (i)
+    pattern = r'(\((?:\d+\vert{}[a-z]+\vert{}[A-Z]+)\))'
     tokens = re.split(pattern, raw_content)
 
-    subsections = []
+    raw_subsections = []
     current_buffer = ""
 
     for token in tokens:
@@ -62,9 +74,10 @@ def clean_and_parse_statute(url):
         if not token_str:
             continue
         
-        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)$', token_str):
+        # Check if current token is a marker (e.g., "(1)", "(a)", "(i)")
+        if re.match(r'^\((?:\d+\vert{}[a-z]+\vert{}[A-Z]+)\)$', token_str):
             if current_buffer:
-                subsections.append(current_buffer.strip())
+                raw_subsections.append(current_buffer.strip())
             current_buffer = token_str
         else:
             if current_buffer:
@@ -73,21 +86,26 @@ def clean_and_parse_statute(url):
                 current_buffer = token_str
 
     if current_buffer:
-        subsections.append(current_buffer.strip())
+        raw_subsections.append(current_buffer.strip())
 
-    # 6. MERGE BARE PARENT MARKERS (e.g., "(3) (a)")
+    # 5. MERGE BARE / STACKED PARENT MARKERS
+    # Combines bare markers like "(3) (a)" directly with content lines like "(i) An offender..."
     final_subsections = []
     i = 0
-    while i < len(subsections):
-        curr = subsections[i]
-        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(subsections):
-            final_subsections.append(f"{curr} {subsections[i+1]}")
+    while i < len(raw_subsections):
+        curr = raw_subsections[i]
+        
+        # If current item is just a marker with no body text (e.g. "(3) (a)" or "(3)")
+        if re.match(r'^\((?:\d+\vert{}[a-z]+)\)(\s*\((?:\d+\vert{}[a-z]+)\))?$', curr) and (i + 1) < len(raw_subsections):
+            merged = f"{curr} {raw_subsections[i+1]}"
+            final_subsections.append(merged)
             i += 2
         else:
             final_subsections.append(curr)
             i += 1
 
-    return {
+    # 6. ASSEMBLE JSON STRUCTURE
+    data = {
         "id": section_id,
         "title": clean_title,
         "source_url": url,
@@ -96,71 +114,8 @@ def clean_and_parse_statute(url):
         "bond_charges": []
     }
 
-def get_links_from_page(url, keyword):
-    """Finds links matching a keyword."""
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            return []
-    except Exception:
-        return []
-
-    soup = BeautifulSoup(response.text, 'html.parser')
-    links = set()
-    for a in soup.find_all('a', href=True):
-        href = a['href']
-        if keyword in href:
-            links.add(urljoin(url, href))
-    return list(links)
-
-def scrape_mca_chapter(chapter_index_url):
-    """Crawls Chapter -> Parts -> Sections."""
-    print("1. Discovering Parts in Chapter...")
-    part_links = get_links_from_page(chapter_index_url, "sections_index.html")
-    if not part_links:
-        part_links = [chapter_index_url]
-
-    print(f"   Found {len(part_links)} Parts.")
-
-    section_links = set()
-    print("2. Discovering Sections in each Part...")
-    for part_url in part_links:
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        res = requests.get(part_url, headers=headers)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            for a in soup.find_all('a', href=True):
-                href = a['href']
-                if href.endswith('.html') and 'index' not in href:
-                    section_links.add(urljoin(part_url, href))
-
-    print(f"   Found {len(section_links)} total section pages.")
-
+    # Save to data directory
     os.makedirs("data", exist_ok=True)
-    index_manifest = []
-
-    for url in sorted(section_links):
-        data = clean_and_parse_statute(url)
-        if data:
-            output_file = f"data/{data['id']}.json"
-            with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2)
-            
-            index_manifest.append({
-                "id": data["id"],
-                "title": data["title"],
-                "file": f"{data['id']}.json"
-            })
-            print(f"Successfully processed: MCA {data['id']} - {data['title']}")
-
-    index_manifest.sort(key=lambda x: [int(c) if c.isdigit() else c for c in x["id"].split("-")])
-
-    with open("data/index.json", "w", encoding="utf-8") as f:
-        json.dump(index_manifest, f, indent=2)
-        
-    print(f"\nComplete! Saved {len(index_manifest)} statutes and generated data/index.json.")
-
-if __name__ == "__main__":
-    chapter_url = "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/parts_index.html"
-    scrape_mca_chapter(chapter_url)
+    output_path = f"data/{section_id}.json"
+    
+    with open(output_
