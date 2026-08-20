@@ -1,1 +1,472 @@
-[]
+[
+  {
+    "id": "45-5-101",
+    "title": "Repealed",
+    "file": "45-5-101.json"
+  },
+  {
+    "id": "45-5-102",
+    "title": "Deliberate homicide",
+    "file": "45-5-102.json"
+  },
+  {
+    "id": "45-5-103",
+    "title": "Mitigated deliberate homicide",
+    "file": "45-5-103.json"
+  },
+  {
+    "id": "45-5-104",
+    "title": "Negligent homicide",
+    "file": "45-5-104.json"
+  },
+  {
+    "id": "45-5-105",
+    "title": "Aiding or soliciting suicide",
+    "file": "45-5-105.json"
+  },
+  {
+    "id": "45-5-106",
+    "title": "Vehicular homicide while under influence",
+    "file": "45-5-106.json"
+  },
+  {
+    "id": "45-5-107",
+    "title": "Aggravated vehicular homicide while under the influence",
+    "file": "45-5-107.json"
+  },
+  {
+    "id": "45-5-111",
+    "title": "Extrajudicial confession -- evidence of death",
+    "file": "45-5-111.json"
+  },
+  {
+    "id": "45-5-112",
+    "title": "Inference of mental state",
+    "file": "45-5-112.json"
+  },
+  {
+    "id": "45-5-116",
+    "title": "Harm to fetus of another -- exceptions",
+    "file": "45-5-116.json"
+  },
+  {
+    "id": "45-5-201",
+    "title": "Assault",
+    "file": "45-5-201.json"
+  },
+  {
+    "id": "45-5-202",
+    "title": "Aggravated assault",
+    "file": "45-5-202.json"
+  },
+  {
+    "id": "45-5-203",
+    "title": "Intimidation",
+    "file": "45-5-203.json"
+  },
+  {
+    "id": "45-5-204",
+    "title": "Mistreating prisoners",
+    "file": "45-5-204.json"
+  },
+  {
+    "id": "45-5-205",
+    "title": "Negligent vehicular assault -- penalty",
+    "file": "45-5-205.json"
+  },
+  {
+    "id": "45-5-206",
+    "title": "Partner or family member assault -- penalty",
+    "file": "45-5-206.json"
+  },
+  {
+    "id": "45-5-207",
+    "title": "Criminal endangerment -- penalty",
+    "file": "45-5-207.json"
+  },
+  {
+    "id": "45-5-208",
+    "title": "Negligent endangerment -- penalty",
+    "file": "45-5-208.json"
+  },
+  {
+    "id": "45-5-209",
+    "title": "Partner or family member assault -- no contact order -- notice -- violation of order -- penalty",
+    "file": "45-5-209.json"
+  },
+  {
+    "id": "45-5-210",
+    "title": "Assault on peace officer or judicial officer",
+    "file": "45-5-210.json"
+  },
+  {
+    "id": "45-5-211",
+    "title": "Assault upon sports official",
+    "file": "45-5-211.json"
+  },
+  {
+    "id": "45-5-212",
+    "title": "Assault on minor",
+    "file": "45-5-212.json"
+  },
+  {
+    "id": "45-5-213",
+    "title": "Assault with weapon",
+    "file": "45-5-213.json"
+  },
+  {
+    "id": "45-5-214",
+    "title": "Assault with bodily fluid",
+    "file": "45-5-214.json"
+  },
+  {
+    "id": "45-5-215",
+    "title": "Strangulation of partner or family member",
+    "file": "45-5-215.json"
+  },
+  {
+    "id": "45-5-220",
+    "title": "Stalking -- exemption -- penalty",
+    "file": "45-5-220.json"
+  },
+  {
+    "id": "45-5-221",
+    "title": "Malicious intimidation or harassment relating to civil or human rights -- penalty",
+    "file": "45-5-221.json"
+  },
+  {
+    "id": "45-5-222",
+    "title": "Sentence enhancement -- offenses committed because of victim's race, creed, religion, color, national origin, or involvement in civil rights or human rights activities",
+    "file": "45-5-222.json"
+  },
+  {
+    "id": "45-5-223",
+    "title": "Surreptitious visual observation or recordation -- place of residence -- public place -- exceptions",
+    "file": "45-5-223.json"
+  },
+  {
+    "id": "45-5-231",
+    "title": "Definitions",
+    "file": "45-5-231.json"
+  },
+  {
+    "id": "45-5-232",
+    "title": "Offender intervention counseling referral",
+    "file": "45-5-232.json"
+  },
+  {
+    "id": "45-5-233",
+    "title": "Report to court or probation officer",
+    "file": "45-5-233.json"
+  },
+  {
+    "id": "45-5-234",
+    "title": "Offender intervention counseling confidentiality",
+    "file": "45-5-234.json"
+  },
+  {
+    "id": "45-5-301",
+    "title": "Unlawful restraint",
+    "file": "45-5-301.json"
+  },
+  {
+    "id": "45-5-302",
+    "title": "Kidnapping",
+    "file": "45-5-302.json"
+  },
+  {
+    "id": "45-5-303",
+    "title": "Aggravated kidnapping",
+    "file": "45-5-303.json"
+  },
+  {
+    "id": "45-5-304",
+    "title": "Custodial interference",
+    "file": "45-5-304.json"
+  },
+  {
+    "id": "45-5-305",
+    "title": "Repealed",
+    "file": "45-5-305.json"
+  },
+  {
+    "id": "45-5-306",
+    "title": "Repealed",
+    "file": "45-5-306.json"
+  },
+  {
+    "id": "45-5-310",
+    "title": "Repealed",
+    "file": "45-5-310.json"
+  },
+  {
+    "id": "45-5-311",
+    "title": "Repealed",
+    "file": "45-5-311.json"
+  },
+  {
+    "id": "45-5-401",
+    "title": "Robbery",
+    "file": "45-5-401.json"
+  },
+  {
+    "id": "45-5-501",
+    "title": "Definitions",
+    "file": "45-5-501.json"
+  },
+  {
+    "id": "45-5-502",
+    "title": "Sexual assault",
+    "file": "45-5-502.json"
+  },
+  {
+    "id": "45-5-503",
+    "title": "Sexual intercourse without consent",
+    "file": "45-5-503.json"
+  },
+  {
+    "id": "45-5-504",
+    "title": "Indecent exposure",
+    "file": "45-5-504.json"
+  },
+  {
+    "id": "45-5-505",
+    "title": "Renumbered 45-8-218",
+    "file": "45-5-505.json"
+  },
+  {
+    "id": "45-5-506",
+    "title": "Renumbered 45-5-511",
+    "file": "45-5-506.json"
+  },
+  {
+    "id": "45-5-507",
+    "title": "Incest",
+    "file": "45-5-507.json"
+  },
+  {
+    "id": "45-5-508",
+    "title": "Aggravated sexual intercourse without consent",
+    "file": "45-5-508.json"
+  },
+  {
+    "id": "45-5-511",
+    "title": "Provisions generally applicable to sexual crimes",
+    "file": "45-5-511.json"
+  },
+  {
+    "id": "45-5-512",
+    "title": "Chemical treatment of sex offenders",
+    "file": "45-5-512.json"
+  },
+  {
+    "id": "45-5-513",
+    "title": "Geographic restrictions applicable to high-risk sexual offenders",
+    "file": "45-5-513.json"
+  },
+  {
+    "id": "45-5-601",
+    "title": "Prostitution -- patronizing prostitute -- exception",
+    "file": "45-5-601.json"
+  },
+  {
+    "id": "45-5-602",
+    "title": "Repealed",
+    "file": "45-5-602.json"
+  },
+  {
+    "id": "45-5-603",
+    "title": "Repealed",
+    "file": "45-5-603.json"
+  },
+  {
+    "id": "45-5-604",
+    "title": "Repealed",
+    "file": "45-5-604.json"
+  },
+  {
+    "id": "45-5-611",
+    "title": "Bigamy",
+    "file": "45-5-611.json"
+  },
+  {
+    "id": "45-5-612",
+    "title": "Marrying a bigamist",
+    "file": "45-5-612.json"
+  },
+  {
+    "id": "45-5-613",
+    "title": "Renumbered 45-5-507",
+    "file": "45-5-613.json"
+  },
+  {
+    "id": "45-5-620",
+    "title": "Repealed",
+    "file": "45-5-620.json"
+  },
+  {
+    "id": "45-5-621",
+    "title": "Nonsupport",
+    "file": "45-5-621.json"
+  },
+  {
+    "id": "45-5-622",
+    "title": "Endangering welfare of children",
+    "file": "45-5-622.json"
+  },
+  {
+    "id": "45-5-623",
+    "title": "Unlawful transactions with children",
+    "file": "45-5-623.json"
+  },
+  {
+    "id": "45-5-624",
+    "title": "Possession of or unlawful attempt to purchase intoxicating substance other than alcohol or marijuana -- interference with sentence or court order",
+    "file": "45-5-624.json"
+  },
+  {
+    "id": "45-5-625",
+    "title": "Sexual abuse of children",
+    "file": "45-5-625.json"
+  },
+  {
+    "id": "45-5-626",
+    "title": "Violation of order of protection",
+    "file": "45-5-626.json"
+  },
+  {
+    "id": "45-5-627",
+    "title": "Ritual abuse of minor -- exceptions -- penalty",
+    "file": "45-5-627.json"
+  },
+  {
+    "id": "45-5-628",
+    "title": "Criminal child endangerment",
+    "file": "45-5-628.json"
+  },
+  {
+    "id": "45-5-629",
+    "title": "Grooming of child for sexual offense",
+    "file": "45-5-629.json"
+  },
+  {
+    "id": "45-5-631",
+    "title": "Interference with parent-child contact",
+    "file": "45-5-631.json"
+  },
+  {
+    "id": "45-5-632",
+    "title": "Aggravated interference with parent-child contact",
+    "file": "45-5-632.json"
+  },
+  {
+    "id": "45-5-633",
+    "title": "Defenses to interference with parent-child contact and aggravated interference with parent-child contact",
+    "file": "45-5-633.json"
+  },
+  {
+    "id": "45-5-634",
+    "title": "Parenting interference",
+    "file": "45-5-634.json"
+  },
+  {
+    "id": "45-5-637",
+    "title": "Possession or consumption of tobacco products, alternative nicotine products, or vapor products by persons under 18 years of age prohibited -- unlawful attempt to purchase -- penalties",
+    "file": "45-5-637.json"
+  },
+  {
+    "id": "45-5-638",
+    "title": "Possession of or unlawful attempt to purchase alcoholic beverage -- interference with court order",
+    "file": "45-5-638.json"
+  },
+  {
+    "id": "45-5-639",
+    "title": "Possession of or unlawful attempt to purchase marijuana -- interference with court order",
+    "file": "45-5-639.json"
+  },
+  {
+    "id": "45-5-640",
+    "title": "Disclosing explicit synthetic media",
+    "file": "45-5-640.json"
+  },
+  {
+    "id": "45-5-701",
+    "title": "Definitions",
+    "file": "45-5-701.json"
+  },
+  {
+    "id": "45-5-702",
+    "title": "Sex trafficking",
+    "file": "45-5-702.json"
+  },
+  {
+    "id": "45-5-703",
+    "title": "Labor trafficking",
+    "file": "45-5-703.json"
+  },
+  {
+    "id": "45-5-704",
+    "title": "Repealed",
+    "file": "45-5-704.json"
+  },
+  {
+    "id": "45-5-705",
+    "title": "Patronizing victim of sex trafficking",
+    "file": "45-5-705.json"
+  },
+  {
+    "id": "45-5-706",
+    "title": "Aggravated sex trafficking",
+    "file": "45-5-706.json"
+  },
+  {
+    "id": "45-5-707",
+    "title": "Property subject to forfeiture -- human trafficking",
+    "file": "45-5-707.json"
+  },
+  {
+    "id": "45-5-708",
+    "title": "Past sexual behavior of victim",
+    "file": "45-5-708.json"
+  },
+  {
+    "id": "45-5-709",
+    "title": "Immunity of child -- sex therapy participants",
+    "file": "45-5-709.json"
+  },
+  {
+    "id": "45-5-710",
+    "title": "Affirmative defense",
+    "file": "45-5-710.json"
+  },
+  {
+    "id": "45-5-711",
+    "title": "Child sex trafficking",
+    "file": "45-5-711.json"
+  },
+  {
+    "id": "45-5-712",
+    "title": "Evidence in cases of sex trafficking, aggravated sex trafficking, or child sex trafficking",
+    "file": "45-5-712.json"
+  },
+  {
+    "id": "45-5-801",
+    "title": "Definitions",
+    "file": "45-5-801.json"
+  },
+  {
+    "id": "45-5-802",
+    "title": "Abuse, sexual abuse, or neglect of vulnerable adult -- penalties",
+    "file": "45-5-802.json"
+  },
+  {
+    "id": "45-5-803",
+    "title": "Failure to report abuse or neglect of vulnerable adult -- false reporting -- penalties",
+    "file": "45-5-803.json"
+  },
+  {
+    "id": "45-5-804",
+    "title": "Exploitation of incapacitated person or vulnerable adult -- penalties",
+    "file": "45-5-804.json"
+  }
+]
