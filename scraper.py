@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def clean_and_parse_statute(url):
+    """Fetches and parses an individual MCA statute page into structured JSON."""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -17,59 +18,90 @@ def clean_and_parse_statute(url):
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 1. STRIP NAVIGATION & DISCLAIMERS FROM DOM
-    # Remove top navs, headers, footers, and disclaimers before parsing text
-    for junk in soup.find_all(['nav', 'header', 'footer', 'script', 'style']):
-        junk.decompose()
+    # 1. PURGE UI NAVIGATION & DOM NOISE
+    # Strips out navigation bars, headers, footers, and scripts before reading text
+    for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form']):
+        element.decompose()
 
-    # 2. EXTRACT LEGISLATIVE HISTORY
+    # 2. EXTRACT LEGISLATIVE HISTORY & DISCLAIMERS
     history = ""
     for p in soup.find_all('p'):
         p_text = p.get_text().strip()
         if p_text.startswith("History:"):
             history = p_text.replace("History:", "").strip()
-            p.decompose()  # Remove from DOM so it doesn't leak into body content
-        elif "Disclaimer:" in p_text:
+            p.decompose()
+        elif "Disclaimer:" in p_text or "Montana Code Annotated" in p_text:
             p.decompose()
 
-    # 3. LOCATE CATCHLINE & SECTION ID
-    # MCA pages use standard paragraph structures for statute body
-    all_text = soup.get_text()
-    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', all_text, re.DOTALL)
+    # Get remaining raw lines from cleaned DOM
+    raw_lines = [line.strip() for line in soup.get_text().splitlines() if line.strip()]
+
+    # Filter out residual header breadcrumbs
+    clean_lines = []
+    for line in raw_lines:
+        if any(keyword in line for keyword in ["Toggle navigation", "MCA Contents", "Search Help", "Part Contents"]):
+            continue
+        clean_lines.append(line)
+
+    full_body = " ".join(clean_lines)
+
+    # 3. MATCH SECTION ID, TITLE, AND BODY
+    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_body)
     if not match:
         return None
 
     section_id = match.group(1).strip()
     title = match.group(2).strip()
-    raw_body = match.group(3).strip()
+    raw_content = match.group(3).strip()
 
-    # Strip any remaining top nav string artifacts before section ID
-    clean_body = ' '.join(raw_body.split())
+    # 4. TOKENIZE BY STRUCTURAL MARKERS
+    # Split text into tokens based on markers like (1), (a), (i)
+    pattern = r'(\((?:\d+|[a-z]+|[A-Z]+)\))'
+    tokens = re.split(pattern, raw_content)
 
-    # 4. STRUCTURAL BREAK LOOKAHEAD
-    # Splits ONLY on true subsection starts: (1), (a), (i) at boundary positions
-    pattern = r'(?=\b\((?:\d+|[a-z]+|[A-Z]+)\)\s+[A-Z"\(])'
-    chunks = [c.strip() for c in re.split(pattern, clean_body) if c.strip()]
+    raw_subsections = []
+    current_buffer = ""
 
-    # 5. MERGE BARE PARENT MARKERS
-    # Fixes "(3) (a)" sitting on its own line above "(i)"
-    subsections = []
+    for token in tokens:
+        token_str = token.strip()
+        if not token_str:
+            continue
+        
+        # Check if token is a structural marker
+        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)$', token_str):
+            if current_buffer:
+                raw_subsections.append(current_buffer.strip())
+            current_buffer = token_str
+        else:
+            if current_buffer:
+                current_buffer += " " + token_str
+            else:
+                current_buffer = token_str
+
+    if current_buffer:
+        raw_subsections.append(current_buffer.strip())
+
+    # 5. MERGE STACKED PARENT MARKERS
+    # Combines bare markers like "(3) (a)" directly with their text payload "(i) An offender..."
+    final_subsections = []
     i = 0
-    while i < len(chunks):
-        curr = chunks[i]
-        # If current line is just a marker like "(3) (a)" or "(3)", merge with next block
-        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(chunks):
-            subsections.append(f"{curr} {chunks[i+1]}")
+    while i < len(raw_subsections):
+        curr = raw_subsections[i]
+        
+        # If line is just a marker without sentence body
+        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(raw_subsections):
+            merged = f"{curr} {raw_subsections[i+1]}"
+            final_subsections.append(merged)
             i += 2
         else:
-            subsections.append(curr)
+            final_subsections.append(curr)
             i += 1
 
     return {
         "id": section_id,
         "title": title,
         "source_url": url,
-        "subsections": subsections,
+        "subsections": final_subsections,
         "history": history,
         "bond_charges": []
     }
