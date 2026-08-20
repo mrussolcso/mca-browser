@@ -53,12 +53,23 @@ header {
     font-weight: 500;
 }
 
+/* Base style for top-level subsections like (1), (2) */
 .subsection-item {
     margin-bottom: 0.75rem;
     padding-left: 0.5rem;
 }
 
-/* Indent nested subsections like (a), (b) */
+/* Level 1 indent: (a), (b), (c) */
+.subsection-item.indent-1 {
+    padding-left: 2rem;
+}
+
+/* Level 2 indent: (i), (ii), (iii) */
+.subsection-item.indent-2 {
+    padding-left: 3.5rem;
+}
+
+/* Fallback for legacy class name */
 .subsection-item.nested {
     padding-left: 2rem;
 }
