@@ -22,7 +22,6 @@ def clean_and_parse_45_5_206():
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # 1. REMOVE ALL DOM NOISE & UI NAVIGATION
-    # Strips out nav bars, headers, footers, forms, and scripts before reading text
     for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'iframe']):
         element.decompose()
 
@@ -62,8 +61,7 @@ def clean_and_parse_45_5_206():
     raw_content = match.group(3).strip()
 
     # 4. TOKENIZE BODY BY STRUCTURAL SUBSECTION MARKERS
-    # Splitting on markers like (1), (a), (i)
-    pattern = r'(\((?:\d+\vert{}[a-z]+\vert{}[A-Z]+)\))'
+    pattern = r'(\((?:\d+|[a-z]+|[A-Z]+)\))'
     tokens = re.split(pattern, raw_content)
 
     raw_subsections = []
@@ -75,7 +73,7 @@ def clean_and_parse_45_5_206():
             continue
         
         # Check if current token is a marker (e.g., "(1)", "(a)", "(i)")
-        if re.match(r'^\((?:\d+\vert{}[a-z]+\vert{}[A-Z]+)\)$', token_str):
+        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)$', token_str):
             if current_buffer:
                 raw_subsections.append(current_buffer.strip())
             current_buffer = token_str
@@ -89,14 +87,13 @@ def clean_and_parse_45_5_206():
         raw_subsections.append(current_buffer.strip())
 
     # 5. MERGE BARE / STACKED PARENT MARKERS
-    # Combines bare markers like "(3) (a)" directly with content lines like "(i) An offender..."
     final_subsections = []
     i = 0
     while i < len(raw_subsections):
         curr = raw_subsections[i]
         
         # If current item is just a marker with no body text (e.g. "(3) (a)" or "(3)")
-        if re.match(r'^\((?:\d+\vert{}[a-z]+)\)(\s*\((?:\d+\vert{}[a-z]+)\))?$', curr) and (i + 1) < len(raw_subsections):
+        if re.match(r'^\((?:\d+|[a-z]+)\)(\s*\((?:\d+|[a-z]+)\))?$', curr) and (i + 1) < len(raw_subsections):
             merged = f"{curr} {raw_subsections[i+1]}"
             final_subsections.append(merged)
             i += 2
@@ -118,4 +115,20 @@ def clean_and_parse_45_5_206():
     os.makedirs("data", exist_ok=True)
     output_path = f"data/{section_id}.json"
     
-    with open(output_
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+    # Generate a single-entry index manifest
+    index_manifest = [{
+        "id": section_id,
+        "title": clean_title,
+        "file": f"{section_id}.json"
+    }]
+    
+    with open("data/index.json", "w", encoding="utf-8") as f:
+        json.dump(index_manifest, f, indent=2)
+
+    print(f"\nSuccess! Saved {output_path} and data/index.json")
+
+if __name__ == "__main__":
+    clean_and_parse_45_5_206()
