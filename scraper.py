@@ -52,38 +52,62 @@ def clean_and_parse_statute(url):
         "bond_charges": []
     }
 
-def scrape_mca_chapter(chapter_index_url):
-    """Crawls a Chapter index page to find and scrape all section pages."""
+def get_links_from_page(url, keyword):
+    """Helper function to find all links on a page matching a keyword."""
     headers = {'User-Agent': 'Mozilla/5.0'}
-    response = requests.get(chapter_index_url, headers=headers)
-    if response.status_code != 200:
-        print(f"Failed to fetch chapter index: {response.status_code}")
-        return
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        if response.status_code != 200:
+            return []
+    except Exception:
+        return []
 
     soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # Find all links ending with .html that match section file patterns
-    section_links = set()
+    links = set()
     for a in soup.find_all('a', href=True):
         href = a['href']
-        if href.endswith('.html') and 'parts_index' not in href and 'chapters_index' not in href:
-            full_url = urljoin(chapter_index_url, href)
-            section_links.add(full_url)
+        if keyword in href:
+            links.add(urljoin(url, href))
+    return list(links)
+
+def scrape_mca_chapter(chapter_index_url):
+    """Crawls Chapter -> Parts -> Sections."""
+    print("1. Discovering Parts in Chapter...")
+    # Get all Part index pages
+    part_links = get_links_from_page(chapter_index_url, "sections_index.html")
+    if not part_links:
+        # Fallback in case chapter page links directly to parts_index or parts
+        part_links = [chapter_index_url]
+
+    print(f"   Found {len(part_links)} Parts.")
+
+    # Get all individual Section URLs from every Part
+    section_links = set()
+    print("2. Discovering Sections in each Part...")
+    for part_url in part_links:
+        # Section links end with .html and are nested in section folders
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        res = requests.get(part_url, headers=headers)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                if href.endswith('.html') and 'index' not in href:
+                    section_links.add(urljoin(part_url, href))
+
+    print(f"   Found {len(section_links)} total section pages.")
 
     os.makedirs("data", exist_ok=True)
     index_manifest = []
 
-    print(f"Found {len(section_links)} potential section pages in chapter.")
-
+    # Parse each section
     for url in sorted(section_links):
         data = clean_and_parse_statute(url)
         if data:
-            # Save individual statute JSON
             output_file = f"data/{data['id']}.json"
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
             
-            # Append entry to index manifest
             index_manifest.append({
                 "id": data["id"],
                 "title": data["title"],
@@ -91,16 +115,16 @@ def scrape_mca_chapter(chapter_index_url):
             })
             print(f"Successfully processed: MCA {data['id']} - {data['title']}")
 
-    # Sort index by section number
-    index_manifest.sort(key=lambda x: [int(c) for c in x["id"].split("-")])
+    # Sort manifest numerically by statute ID (e.g., 45-5-101 before 45-5-201)
+    index_manifest.sort(key=lambda x: [int(c) if c.isdigit() else c for c in x["id"].split("-")])
 
     # Save master index.json
     with open("data/index.json", "w", encoding="utf-8") as f:
         json.dump(index_manifest, f, indent=2)
         
-    print(f"\nComplete! Processed {len(index_manifest)} statutes and generated data/index.json.")
+    print(f"\nComplete! Saved {len(index_manifest)} statutes and generated data/index.json.")
 
 if __name__ == "__main__":
-    # Target: Title 45, Chapter 5 (Offenses Against the Person)
+    # Target: Title 45, Chapter 5
     chapter_url = "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/parts_index.html"
     scrape_mca_chapter(chapter_url)
