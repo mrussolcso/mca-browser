@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def clean_and_parse_statute(url):
-    """Fetches and parses an MCA statute page cleanly by paragraph structure."""
+    """Parses MCA pages by relying on the state site's native line breaks."""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -18,81 +18,67 @@ def clean_and_parse_statute(url):
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Extract all text paragraphs or body blocks
-    paragraphs = soup.find_all('p')
-    if paragraphs:
-        text_blocks = [p.get_text().strip() for p in paragraphs if p.get_text().strip()]
-    else:
-        # Fallback if no <p> tags exist
-        body_text = soup.body.get_text() if soup.body else soup.get_text()
-        text_blocks = [line.strip() for line in body_text.split('\n') if line.strip()]
+    # Get lines preserved by HTML structure
+    text = soup.get_text()
+    raw_lines = [line.strip() for line in text.splitlines() if line.strip()]
 
-    full_text = " ".join(" ".join(text_blocks).split())
-
-    # 1. Strip disclaimers
-    full_text = re.sub(r'Disclaimer:.*$', '', full_text, flags=re.IGNORECASE).strip()
-
-    # 2. Extract History
+    # Filter out disclaimers and page clutter
+    clean_lines = []
     history = ""
-    history_match = re.search(r'History:\s*(.*)', full_text)
-    if history_match:
-        history = history_match.group(1).strip()
-        full_text = re.sub(r'History:\s*.*', '', full_text).strip()
+    for line in raw_lines:
+        if line.lower().startswith("disclaimer:"):
+            break
+        if line.startswith("History:"):
+            history = line.replace("History:", "").strip()
+            break
+        clean_lines.append(line)
 
-    # 3. Match Section ID, Catchline, and Content
-    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_text)
+    full_body = " ".join(clean_lines)
+
+    # Match ID, Title, and Raw Body Text
+    match = re.search(r'(\d+-\d+-\d+)\.\s*([^.]+)\.\s*(.*)', full_body)
     if not match:
         return None
 
     section_id = match.group(1).strip()
     title = match.group(2).strip()
-    raw_content = match.group(3).strip()
+    content = match.group(3).strip()
 
-    # 4. Smart Line Splitting: Split only on markers at structural boundaries
-    # Looks for markers like (1), (a), (i) preceded by space/start and followed by text
-    tokens = re.split(r'(\((?:\d+|[a-z]+|[A-Z]+)\))', raw_content)
+    # Split ONLY on structural markers at the start of new provisions:
+    # Pattern looks for (1), (a), (i) preceded by space/start and followed by space + Capital/Letter/Quote
+    pattern = r'(?=\s*\((?:\d+|[a-z]+|[A-Z]+)\)\s+[A-Z"\(])'
+    raw_subsections = re.split(pattern, content)
 
     subsections = []
-    current_line = ""
-
-    for token in tokens:
-        token_str = token.strip()
-        if not token_str:
+    for sub in raw_subsections:
+        cleaned = sub.strip()
+        if not cleaned:
             continue
         
-        # Check if the token is a subsection marker like (1), (a), (i)
-        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)$', token_str):
-            if current_line:
-                subsections.append(current_line.strip())
-            current_line = token_str
+        # If a line is just an empty marker like "(3) (a)", merge with previous or handle cleanly
+        if subsections and re.match(r'^\((?:\d+|[a-z]+)\)\s*\((?:\d+|[a-z]+)\)$', subsections[-1]):
+            subsections[-1] = f"{subsections[-1]} {cleaned}"
         else:
-            if current_line:
-                current_line += " " + token_str
-            else:
-                current_line = token_str
+            subsections.append(cleaned)
 
-    if current_line:
-        subsections.append(current_line.strip())
-
-    # 5. Merge Orphaned Structural Headers (e.g., merge "(3)" and "(a)" onto one line)
-    merged_subsections = []
+    # Final cleanup pass for remaining stacked markers like "(3) (a)"
+    final_subsections = []
     i = 0
     while i < len(subsections):
-        line = subsections[i]
-        # If line is just a bare number marker like "(3)" or "(4)"
-        if re.match(r'^\(\d+\)$', line) and (i + 1) < len(subsections):
-            next_line = subsections[i + 1]
-            merged_subsections.append(f"{line} {next_line}")
+        curr = subsections[i]
+        # Check for bare marker lines like "(3) (a)"
+        if re.match(r'^\((?:\d+|[a-z]+|[A-Z]+)\)(?:\s*\((?:\d+|[a-z]+|[A-Z]+)\))?$', curr) and i + 1 < len(subsections):
+            final_subsections.append(f"{curr} {subsections[i+1]}")
             i += 2
         else:
-            merged_subsections.append(line)
+            final_subsections.append(curr)
             i += 1
 
     return {
         "id": section_id,
         "title": title,
         "source_url": url,
-        "subsections": merged_subsections,
+        "subsections": final_subsections,
         "history": history,
         "bond_charges": []
     }
