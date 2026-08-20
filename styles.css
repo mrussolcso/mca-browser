@@ -74,3 +74,15 @@ header {
 .hidden {
     display: none;
 }
+
+.selector-container {
+    margin-top: 1rem;
+}
+
+.selector-container select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    max-width: 90%;
+}
