@@ -1,1 +1,76 @@
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #212529;
+    --text-muted: #6c757d;
+    --accent-color: #004085;
+    --border-color: #e9ecef;
+}
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.statute-header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.statute-header h2 {
+    margin: 0;
+    color: var(--accent-color);
+}
+
+.statute-header h3 {
+    margin: 0.25rem 0 0 0;
+    font-weight: 500;
+}
+
+.subsection-item {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+/* Indent nested subsections like (a), (b) */
+.subsection-item.nested {
+    padding-left: 2rem;
+}
+
+.statute-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.hidden {
+    display: none;
+}
