@@ -58,16 +58,18 @@ def parse_statute_with_ai(law_id, title_short, url):
     {raw_html}
     """
 
-    # Automatically retrieves key from GEMINI_API_KEY environment variable
     client = genai.Client()
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
+    
+    # 1. Update model to 'gemini-3.6-flash'
+    # 2. Use chat.create and send_message per recommended SDK pattern
+    chat = client.chats.create(
+        model="gemini-3.6-flash",
         config=types.GenerateContentConfig(
             response_mime_type="application/json"
         )
     )
-
+    
+    response = chat.send_message(prompt)
     statute_json = json.loads(response.text)
 
     os.makedirs("data", exist_ok=True)
