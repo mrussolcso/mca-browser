@@ -6,20 +6,40 @@ from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
 
-def extract_law_id_from_url(url):
-    """Extracts MCA section ID (e.g., '45-5-206') from an MCA URL or page content."""
-    # Attempt extraction from common MCA URL pattern: .../0450-0050-0020-0060.html
-    match = re.search(r'(\d{4})-(\d{4})-(\d{4})-(\d{4})\.html', url)
-    if match:
-        t, c, p, s = [int(x) for x in match.groups()]
-        return f"{t}-{c}-{s}"
+def build_mca_url(law_id):
+    """
+    Constructs and verifies the MCA URL for a statute ID (e.g., '45-5-102').
+    Format: title_0450/chapter_0050/part_0010/section_0020/0450-0050-0010-0020.html
+    """
+    match = re.match(r'^(\d+)-(\d+)-(\d+)$', law_id.strip())
+    if not match:
+        raise ValueError(f"Invalid Statute ID format: '{law_id}'. Expected format like '45-5-102'.")
+
+    title_num, chapter_num, section_raw = [int(x) for x in match.groups()]
     
-    # Fallback: search for standard statute ID pattern in the URL text
-    match_alt = re.search(r'\b\d+-\d+-\d+\b', url)
-    if match_alt:
-        return match_alt.group(0)
+    # In MCA URLs, section 102 maps to section number 20 (section_0020 / -0020)
+    section_num = section_raw % 100
+
+    title_str = f"{title_num * 10:04d}"
+    chapter_str = f"{chapter_num * 10:04d}"
+    section_str = f"{section_num * 10:04d}"
+
+    headers = {'User-Agent': 'Mozilla/5.0'}
+
+    # Test candidate part numbers (part 1 to 15) to resolve the exact URL path
+    for part_num in range(1, 16):
+        part_str = f"{part_num * 10:04d}"
+        candidate_url = (
+            f"https://mca.legmt.gov/bills/mca/title_{title_str}/"
+            f"chapter_{chapter_str}/part_{part_str}/section_{section_str}/"
+            f"{title_str}-{chapter_str}-{part_str}-{section_str}.html"
+        )
         
-    raise ValueError(f"Could not extract a valid law_id from URL: {url}")
+        response = requests.get(candidate_url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            return candidate_url
+
+    raise Exception(f"Could not locate a valid MCA webpage for statute ID {law_id}.")
 
 def fetch_clean_statute_html(url):
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -29,22 +49,13 @@ def fetch_clean_statute_html(url):
 
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    # Try finding statute number in document text if URL parsing was ambiguous
-    text_content = soup.get_text()
-    
     for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'iframe']):
         element.decompose()
 
-    return str(soup.body) if soup.body else str(soup), text_content
+    return str(soup.body) if soup.body else str(soup)
 
 def parse_statute_with_ai(law_id, title_short, url):
-    raw_html, text_content = fetch_clean_statute_html(url)
-
-    # If law_id couldn't be strictly formatted from URL, infer from body text
-    if not re.match(r'^\d+-\d+-\d+$', law_id):
-        match = re.search(r'\b(\d+-\d+-\d+)\b', text_content)
-        if match:
-            law_id = match.group(1)
+    raw_html = fetch_clean_statute_html(url)
 
     prompt = f"""
     You are a legal data engineer. Parse the provided HTML for Montana Code Annotated (MCA) section {law_id}.
@@ -52,7 +63,7 @@ def parse_statute_with_ai(law_id, title_short, url):
 
     {{
       "law_id": "{law_id}",
-      "title_full": "Exact full title string (e.g. Partner or family member assault -- penalty)",
+      "title_full": "Exact full title string (e.g. Deliberate homicide)",
       "title_short": "{title_short}",
       "source_url": "{url}",
       "history": "Legislative history string starting with En. Sec... (or empty string if not present)",
@@ -103,19 +114,20 @@ def parse_statute_with_ai(law_id, title_short, url):
     print(f"Successfully processed and saved {out_path}")
 
 if __name__ == "__main__":
-    statute_url = os.environ.get("STATUTE_URL", "").strip()
+    statute_id = os.environ.get("STATUTE_ID", "").strip()
     title_short = os.environ.get("TITLE_SHORT", "").strip()
 
-    if not statute_url or not title_short:
-        print("Error: STATUTE_URL and TITLE_SHORT environment variables are required.")
+    if not statute_id or not title_short:
+        print("Error: STATUTE_ID and TITLE_SHORT environment variables are required.")
         exit(1)
 
-    print(f"Processing URL: {statute_url}")
+    print(f"Target Statute ID: {statute_id}")
     print(f"Short Title: {title_short}")
 
     try:
-        law_id = extract_law_id_from_url(statute_url)
-        parse_statute_with_ai(law_id, title_short, statute_url)
+        url = build_mca_url(statute_id)
+        print(f"Resolved MCA URL: {url}")
+        parse_statute_with_ai(statute_id, title_short, url)
     except Exception as err:
         print(f"Fatal error processing statute: {err}")
         exit(1)
