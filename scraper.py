@@ -1,9 +1,58 @@
 import os
 import json
+import time
+import re
 import requests
 from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
+
+def get_chapter_statutes(title_num, chapter_num):
+    """Fetches the index page for a given Title/Chapter and extracts all statute links."""
+    formatted_title = f"{int(title_num):04d}"
+    formatted_chapter = f"{int(chapter_num):04d}"
+    
+    chapter_index_url = f"https://mca.legmt.gov/bills/mca/title_{formatted_title}/chapter_{formatted_chapter}/parts_index.html"
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    
+    print(f"Fetching Chapter index: {chapter_index_url}")
+    response = requests.get(chapter_index_url, headers=headers, timeout=10)
+    
+    # Fallback check if parts_index isn't the direct structure
+    if response.status_code != 200:
+        chapter_index_url = f"https://mca.legmt.gov/bills/mca/title_{formatted_title}/chapter_{formatted_chapter}/sections_index.html"
+        response = requests.get(chapter_index_url, headers=headers, timeout=10)
+        
+    if response.status_code != 200:
+        raise Exception(f"Could not load chapter index page. Status code: {response.status_code}")
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    statutes = []
+
+    for a_tag in soup.find_all('a', href=True):
+        text = a_tag.get_text().strip()
+        # Find statute patterns like 45-5-206
+        statute_match = re.search(r'\b\d+-\d+-\d+\b', text)
+        if statute_match:
+            law_id = statute_match.group(0)
+            href = a_tag['href']
+            
+            # Resolve relative URLs
+            if href.startswith('http'):
+                full_url = href
+            else:
+                base_dir = chapter_index_url.rsplit('/', 1)[0]
+                full_url = f"{base_dir}/{href}"
+
+            # Filter out repeated links or non-statute items (like 'Repealed' or 'Reserved')
+            if not any(s['id'] == law_id for s in statutes) and "reserved" not in text.lower():
+                statutes.append({
+                    "id": law_id,
+                    "short": law_id,
+                    "url": full_url
+                })
+
+    return statutes
 
 def fetch_clean_statute_html(url):
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -59,9 +108,6 @@ def parse_statute_with_ai(law_id, title_short, url):
     """
 
     client = genai.Client()
-    
-    # 1. Update model to 'gemini-3.6-flash'
-    # 2. Use chat.create and send_message per recommended SDK pattern
     chat = client.chats.create(
         model="gemini-3.6-flash",
         config=types.GenerateContentConfig(
@@ -79,13 +125,24 @@ def parse_statute_with_ai(law_id, title_short, url):
     print(f"Successfully processed {law_id}.json")
 
 if __name__ == "__main__":
-    parse_statute_with_ai(
-        law_id="45-5-206", 
-        title_short="PFMA", 
-        url="https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html"
-    )
-    parse_statute_with_ai(
-        law_id="45-5-231", 
-        title_short="Offender Intervention", 
-        url="https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0310/0450-0050-0020-0310.html"
-    )
+    title_input = os.environ.get("TITLE_NUM", "45")
+    chapter_input = os.environ.get("CHAPTER_NUM", "5")
+
+    print(f"--- Processing Title {title_input}, Chapter {chapter_input} ---")
+    
+    try:
+        statutes_to_scrape = get_chapter_statutes(title_input, chapter_input)
+        print(f"Found {len(statutes_to_scrape)} statutes to process.")
+
+        for idx, item in enumerate(statutes_to_scrape, 1):
+            print(f"[{idx}/{len(statutes_to_scrape)}] Processing {item['id']}...")
+            try:
+                parse_statute_with_ai(item["id"], item["short"], item["url"])
+            except Exception as e:
+                print(f"Error processing {item['id']}: {e}")
+
+            # 4-second delay keeps execution rate under 15 requests/minute
+            time.sleep(4)
+
+    except Exception as err:
+        print(f"Fatal error: {err}")
