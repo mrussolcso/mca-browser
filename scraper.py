@@ -8,49 +8,50 @@ from google import genai
 from google.genai import types
 
 def get_chapter_statutes(title_num, chapter_num):
-    """Fetches the index page for a given Title/Chapter and extracts all statute links."""
+    """Crawls chapter part indexes to discover all available statute URLs."""
     formatted_title = f"{int(title_num):04d}"
     formatted_chapter = f"{int(chapter_num):04d}"
     
-    chapter_index_url = f"https://mca.legmt.gov/bills/mca/title_{formatted_title}/chapter_{formatted_chapter}/parts_index.html"
     headers = {'User-Agent': 'Mozilla/5.0'}
-    
-    print(f"Fetching Chapter index: {chapter_index_url}")
-    response = requests.get(chapter_index_url, headers=headers, timeout=10)
-    
-    # Fallback check if parts_index isn't the direct structure
-    if response.status_code != 200:
-        chapter_index_url = f"https://mca.legmt.gov/bills/mca/title_{formatted_title}/chapter_{formatted_chapter}/sections_index.html"
-        response = requests.get(chapter_index_url, headers=headers, timeout=10)
-        
-    if response.status_code != 200:
-        raise Exception(f"Could not load chapter index page. Status code: {response.status_code}")
-
-    soup = BeautifulSoup(response.text, 'html.parser')
     statutes = []
 
-    for a_tag in soup.find_all('a', href=True):
-        text = a_tag.get_text().strip()
-        # Find statute patterns like 45-5-206
-        statute_match = re.search(r'\b\d+-\d+-\d+\b', text)
-        if statute_match:
-            law_id = statute_match.group(0)
-            href = a_tag['href']
-            
-            # Resolve relative URLs
-            if href.startswith('http'):
-                full_url = href
-            else:
-                base_dir = chapter_index_url.rsplit('/', 1)[0]
-                full_url = f"{base_dir}/{href}"
+    # Iterate through potential chapter parts (e.g., part 1 to part 20)
+    for part in range(1, 21):
+        formatted_part = f"{part:04d}"
+        part_url = f"https://mca.legmt.gov/bills/mca/title_{formatted_title}/chapter_{formatted_chapter}/part_{formatted_part}/sections_index.html"
+        
+        response = requests.get(part_url, headers=headers, timeout=5)
+        if response.status_code != 200:
+            # Stop if we hit a part that doesn't exist
+            if part > 1 and not statutes:
+                continue
+            elif part > 1:
+                break
 
-            # Filter out repeated links or non-statute items (like 'Repealed' or 'Reserved')
-            if not any(s['id'] == law_id for s in statutes) and "reserved" not in text.lower():
-                statutes.append({
-                    "id": law_id,
-                    "short": law_id,
-                    "url": full_url
-                })
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        for a_tag in soup.find_all('a', href=True):
+            text = a_tag.get_text().strip()
+            statute_match = re.search(r'\b\d+-\d+-\d+\b', text)
+            
+            if statute_match:
+                law_id = statute_match.group(0)
+                href = a_tag['href']
+                
+                # Build absolute MCA URL
+                if href.startswith('http'):
+                    full_url = href
+                else:
+                    base_dir = part_url.rsplit('/', 1)[0]
+                    full_url = f"{base_dir}/{href}"
+
+                # Filter out reserved sections or duplicate entries
+                if not any(s['id'] == law_id for s in statutes) and "reserved" not in text.lower():
+                    statutes.append({
+                        "id": law_id,
+                        "short": law_id,
+                        "url": full_url
+                    })
 
     return statutes
 
@@ -128,11 +129,11 @@ if __name__ == "__main__":
     title_input = os.environ.get("TITLE_NUM", "45")
     chapter_input = os.environ.get("CHAPTER_NUM", "5")
 
-    print(f"--- Processing Title {title_input}, Chapter {chapter_input} ---")
+    print(f"--- Crawling Title {title_input}, Chapter {chapter_input} ---")
     
     try:
         statutes_to_scrape = get_chapter_statutes(title_input, chapter_input)
-        print(f"Found {len(statutes_to_scrape)} statutes to process.")
+        print(f"Found {len(statutes_to_scrape)} active statutes to process.")
 
         for idx, item in enumerate(statutes_to_scrape, 1):
             print(f"[{idx}/{len(statutes_to_scrape)}] Processing {item['id']}...")
@@ -141,7 +142,7 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"Error processing {item['id']}: {e}")
 
-            # 4-second delay keeps execution rate under 15 requests/minute
+            # 4-second delay keeps request rate under Gemini's 15 RPM limit
             time.sleep(4)
 
     except Exception as err:
