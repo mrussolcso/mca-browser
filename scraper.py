@@ -1,199 +1,103 @@
 import os
 import json
-import re
 import requests
 from bs4 import BeautifulSoup
+from google import genai
+from google.genai import types
 
-def transform_citation_links(soup):
-    """Converts external MCA statute hyperlinks into internal relative anchors."""
-    for a in soup.find_all('a'):
-        text = a.get_text().strip()
-        statute_match = re.search(r'\b\d+-\d+-\d+\b', text)
-        if statute_match:
-            statute_id = statute_match.group(0)
-            a.replace_with(f'<a class="statute-link" href="#{statute_id}">{text}</a>')
-        else:
-            a.replace_with(text)
-
-def classify_marker(token):
-    """Identifies statutory hierarchy level for a marker token."""
-    if re.match(r'^\(\d+\)$', token):
-        return 1  # (1), (2), (3)
-    if re.match(r'^\([a-z]\)$', token):
-        return 2  # (a), (b), (c)
-    if re.match(r'^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)$', token):
-        return 3  # (i), (ii), (iii)
-    if re.match(r'^\([A-Z]\)$', token):
-        return 4  # (A), (B), (C)
-    if re.match(r'^\((?:I|II|III|IV|V|VI|VII|VIII|IX|X)\)$', token):
-        return 5  # (I), (II), (III)
-    return None
-
-def parse_statute_tree(law_id, raw_paragraphs):
-    root_id = f"{law_id}(0)"
-    nodes = []
-
-    # Stack holds tuples of (level_number, marker_string, global_id)
-    stack = [(0, "(0)", root_id)]
-
-    # Check if the first paragraph starts without a level 1 marker like (1)
-    first_p = raw_paragraphs[0] if raw_paragraphs else ""
-    first_p_text = BeautifulSoup(first_p, "html.parser").get_text().strip()
-    has_lead_in = not bool(re.search(r'^\(\d+\)', first_p_text))
-
-    if has_lead_in and raw_paragraphs:
-        lead_in_text = raw_paragraphs.pop(0)
-        nodes.append({
-            "global_id": root_id,
-            "path": "(0)",
-            "parent": None,
-            "indent": 0,
-            "text": lead_in_text
-        })
-    else:
-        nodes.append({
-            "global_id": root_id,
-            "path": "(0)",
-            "parent": None,
-            "indent": 0,
-            "text": None
-        })
-
-    for p_html in raw_paragraphs:
-        p_text = BeautifulSoup(p_html, "html.parser").get_text().strip()
-        
-        match = re.match(r'^((?:\s*\((?:\d+|[a-z]+|[A-Z]+)\))+)\s*(.*)', p_text)
-        if not match:
-            continue
-
-        raw_markers_str = match.group(1).strip()
-        markers = re.findall(r'\((?:\d+|[a-z]+|[A-Z]+)\)', raw_markers_str)
-
-        if not markers:
-            continue
-
-        for idx, marker in enumerate(markers):
-            m_level = classify_marker(marker)
-            if not m_level:
-                continue
-
-            while stack and stack[-1][0] >= m_level:
-                stack.pop()
-
-            parent_info = stack[-1] if stack else (0, "(0)", root_id)
-            parent_global_id = parent_info[2]
-            parent_path = parent_info[2].replace(law_id, "")
-
-            if parent_path == "(0)":
-                current_path = marker
-            else:
-                current_path = f"{parent_path}{marker}"
-
-            current_global_id = f"{law_id}{current_path}"
-            is_last_marker = (idx == len(markers) - 1)
-
-            if is_last_marker:
-                clean_html = re.sub(r'^(?:<[^>]+>|\s)*(\((?:\d+|[a-z]+|[A-Z]+)\)\s*)+', '', p_html).strip()
-                node_text = clean_html
-            else:
-                node_text = None
-
-            nodes.append({
-                "global_id": current_global_id,
-                "path": current_path,
-                "parent": parent_global_id,
-                "indent": m_level,
-                "text": node_text
-            })
-
-            stack.append((m_level, marker, current_global_id))
-
-    return nodes
-
-def scrape_statute(law_id, url, title_short):
+def fetch_clean_statute_html(url):
+    """Fetches the webpage and strips out navigation and boilerplate DOM noise."""
     headers = {'User-Agent': 'Mozilla/5.0'}
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            print(f"[{law_id}] Fetch failed: Status {response.status_code}")
-            return None
-    except Exception as e:
-        print(f"[{law_id}] Fetch error: {e}")
-        return None
+    response = requests.get(url, headers=headers, timeout=10)
+    if response.status_code != 200:
+        raise Exception(f"Failed to fetch {url}: HTTP {response.status_code}")
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    transform_citation_links(soup)
-
+    # Purge non-content DOM elements
     for element in soup.find_all(['nav', 'header', 'footer', 'script', 'style', 'form', 'iframe']):
         element.decompose()
 
-    history = ""
-    for p in soup.find_all('p'):
-        text = p.get_text().strip()
-        if text.startswith("History:"):
-            history = text.replace("History:", "").strip()
-            p.decompose()
-        elif "Disclaimer:" in text or "Montana Code Annotated" in text:
-            p.decompose()
+    return str(soup.body) if soup.body else str(soup)
 
-    raw_paragraphs = []
-    clean_title = ""
+def parse_statute_with_ai(law_id, title_short, url):
+    raw_html = fetch_clean_statute_html(url)
 
-    for p in soup.find_all('p'):
-        p_text = p.get_text().strip()
-        if not p_text:
-            continue
+    # System instruction defining strict structural expectations
+    prompt = f"""
+    You are a legal data engineer. Parse the provided HTML for Montana Code Annotated (MCA) section {law_id}.
+    Return a strictly formatted JSON object matching this schema:
 
-        if p_text.startswith(f"{law_id}."):
-            title_match = re.search(rf'{re.escape(law_id)}\.\s*([^.]+)\.', p_text)
-            if title_match:
-                clean_title = title_match.group(1).strip()
-            continue
+    {{
+      "law_id": "{law_id}",
+      "title_full": "Exact full title string (e.g. Partner or family member assault -- penalty)",
+      "title_short": "{title_short}",
+      "source_url": "{url}",
+      "history": "Legislative history string starting with En. Sec... (or empty string if not present)",
+      "nodes": [
+        {{
+          "global_id": "{law_id}(0)",
+          "path": "(0)",
+          "parent": null,
+          "indent": 0,
+          "text": "Any introductory preamble text appearing BEFORE section (1). If no lead-in text exists, set this to null."
+        }},
+        {{
+          "global_id": "{law_id}(1)",
+          "path": "(1)",
+          "parent": "{law_id}(0)",
+          "indent": 1,
+          "text": "Content of subsection (1) stripped of leading '(1)' marker."
+        }},
+        {{
+          "global_id": "{law_id}(1)(a)",
+          "path": "(1)(a)",
+          "parent": "{law_id}(1)",
+          "indent": 2,
+          "text": "Content of subsection (1)(a) stripped of leading '(a)' marker."
+        }}
+      ]
+    }}
 
-        raw_paragraphs.append("".join(str(c) for c in p.contents).strip())
+    Rules:
+    1. Every node must have an accurate global_id (e.g., "{law_id}(3)(a)(i)"), path, parent, indent level, and text.
+    2. Convert any inline statute citations (like "45-5-231") into relative HTML links: <a class="statute-link" href="#45-5-231">45-5-231</a>.
+    3. If a container node like (3) or (3)(a) has no direct body text of its own (because text starts at (3)(a)(i)), its "text" field MUST be null.
+    4. Strip all leading marker prefixes like "(1)", "(a)", or "(i)" out of the "text" field content so only clean text remains.
 
-    nodes = parse_statute_tree(law_id, raw_paragraphs)
+    Raw HTML Input:
+    {raw_html}
+    """
 
-    data = {
-        "law_id": law_id,
-        "title_full": clean_title,
-        "title_short": title_short,
-        "source_url": url,
-        "history": history,
-        "nodes": nodes
-    }
+    client = genai.Client()
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json"
+        )
+    )
 
+    statute_json = json.loads(response.text)
+
+    # Save output locally
     os.makedirs("data", exist_ok=True)
     with open(f"data/{law_id}.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4)
+        json.dump(statute_json, f, indent=4)
 
-    # Output Level-0 status directly to terminal
-    print(f"\n--- {law_id} ({clean_title}) ---")
-    print(f"Level 0 Node: {json.dumps(nodes[0], indent=2)}")
-    print(f"Total Nodes: {len(nodes)}")
-
-    return {"id": law_id, "title": clean_title, "file": f"{law_id}.json"}
+    print(f"Successfully scraped and formatted {law_id}.json using AI!")
+    return statute_json
 
 if __name__ == "__main__":
-    statutes_to_scrape = [
-        {
-            "id": "45-5-206",
-            "short": "PFMA",
-            "url": "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html"
-        },
-        {
-            "id": "45-5-231",
-            "short": "Offender Intervention",
-            "url": "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0310/0450-0050-0020-0310.html"
-        }
-    ]
+    # Test on both 45-5-206 and 45-5-231
+    parse_statute_with_ai(
+        law_id="45-5-206", 
+        title_short="PFMA", 
+        url="https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html"
+    )
 
-    index_manifest = []
-    for stat in statutes_to_scrape:
-        entry = scrape_statute(stat["id"], stat["url"], stat["short"])
-        if entry:
-            index_manifest.append(entry)
-
-    with open("data/index.json", "w", encoding="utf-8") as f:
-        json.dump(index_manifest, f, indent=4)
+    parse_statute_with_ai(
+        law_id="45-5-231", 
+        title_short="Offender Intervention", 
+        url="https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0310/0450-0050-0020-0310.html"
+    )
