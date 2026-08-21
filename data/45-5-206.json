@@ -1,6 +1,7 @@
 {
     "law_id": "45-5-206",
     "title_full": "Partner or family member assault -- penalty",
+    "title_short": "PFMA",
     "source_url": "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html",
     "history": "En. Sec. 1, Ch. 700, L. 1985; amd. Sec. 1, Ch. 480, L. 1989; amd. Sec. 257, Ch. 800, L. 1991; amd. Sec. 2, Ch. 425, L. 1993; amd. Sec. 51, Ch. 18, L. 1995; amd. Sec. 10, Ch. 350, L. 1995; amd. Sec. 2, Ch. 245, L. 1997; amd. Sec. 5, Ch. 484, L. 1997; amd. Sec. 8, Ch. 432, L. 1999; amd. Sec. 6, Ch. 503, L. 2001; amd. Sec. 1, Ch. 438, L. 2003; amd. Sec. 1, Ch. 161, L. 2013; amd. Sec. 1, Ch. 228, L. 2013; amd. Sec. 3, Ch. 104, L. 2017; amd. Sec. 6, Ch. 394, L. 2017; amd. Sec. 1, Ch. 463, L. 2025.",
     "nodes": [
@@ -12,15 +13,15 @@
             "text": "(a)\tpurposely or knowingly causes bodily injury to a partner or family member;"
         },
         {
-            "global_id": "45-5-206(0)(b)",
-            "path": "(0)(b)",
+            "global_id": "45-5-206(b)",
+            "path": "(b)",
             "parent": "45-5-206(0)",
             "indent": 2,
             "text": "negligently causes bodily injury to a partner or family member with a weapon; or"
         },
         {
-            "global_id": "45-5-206(0)(c)",
-            "path": "(0)(c)",
+            "global_id": "45-5-206(c)",
+            "path": "(c)",
             "parent": "45-5-206(0)",
             "indent": 2,
             "text": "purposely or knowingly causes reasonable apprehension of bodily injury in a partner or family member."
@@ -61,30 +62,30 @@
             "text": null
         },
         {
-            "global_id": "45-5-206(3)(a)(i)",
-            "path": "(3)(a)(i)",
-            "parent": "45-5-206(3)(a)",
-            "indent": 3,
+            "global_id": "45-5-206(3)(i)",
+            "path": "(3)(i)",
+            "parent": "45-5-206(3)",
+            "indent": 2,
             "text": "An offender convicted of partner or family member assault shall be fined an amount not less than $100 or more than $1,000 and be imprisoned in the county jail for a term not to exceed 1 year or not less than 24 hours for a first offense."
         },
         {
-            "global_id": "45-5-206(3)(a)(ii)",
-            "path": "(3)(a)(ii)",
-            "parent": "45-5-206(3)(a)",
+            "global_id": "45-5-206(3)(i)(ii)",
+            "path": "(3)(i)(ii)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
             "text": "An offender convicted of a second offense under this section shall be fined not less than $300 or more than $1,000 and be imprisoned in the county jail not less than 72 hours or more than 1 year."
         },
         {
-            "global_id": "45-5-206(3)(a)(iii)",
-            "path": "(3)(a)(iii)",
-            "parent": "45-5-206(3)(a)",
+            "global_id": "45-5-206(3)(i)(iii)",
+            "path": "(3)(i)(iii)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
             "text": "Upon a first or second conviction, the offender may be ordered into misdemeanor probation as provided in <a class=\"statute-link\" href=\"#46-23-1005\">46-23-1005</a>."
         },
         {
-            "global_id": "45-5-206(3)(a)(iv)",
-            "path": "(3)(a)(iv)",
-            "parent": "45-5-206(3)(a)",
+            "global_id": "45-5-206(3)(i)(iv)",
+            "path": "(3)(i)(iv)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
             "text": "On a third or subsequent conviction for partner or family member assault, the offender shall be fined not less than $500 and not more than $50,000 and be imprisoned for a term not less than 30 days and not more than 5 years. If the term of imprisonment does not exceed 1 year, the person shall be imprisoned in the county jail. If the term of imprisonment exceeds 1 year, the person shall be imprisoned in the state prison."
         },
@@ -156,7 +157,14 @@
             "path": "(4)",
             "parent": "45-5-206(0)",
             "indent": 1,
-            "text": "(a) An offender convicted of partner or family member assault is required to pay for and complete a counseling assessment with a focus on violence, controlling behavior, dangerousness, and chemical dependency. An investigative criminal justice report, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, must be copied and sent to the offender intervention program, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, to assist the counseling provider in properly assessing the offender's need for counseling and treatment. Counseling providers shall take all required precautions to ensure the confidentiality of the report. If the report contains confidential information relating to the victim's location or not related to the charged offense, that information must be deleted from the report prior to being sent to the offender intervention program."
+            "text": null
+        },
+        {
+            "global_id": "45-5-206(4)(a)",
+            "path": "(4)(a)",
+            "parent": "45-5-206(4)",
+            "indent": 2,
+            "text": "An offender convicted of partner or family member assault is required to pay for and complete a counseling assessment with a focus on violence, controlling behavior, dangerousness, and chemical dependency. An investigative criminal justice report, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, must be copied and sent to the offender intervention program, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, to assist the counseling provider in properly assessing the offender's need for counseling and treatment. Counseling providers shall take all required precautions to ensure the confidentiality of the report. If the report contains confidential information relating to the victim's location or not related to the charged offense, that information must be deleted from the report prior to being sent to the offender intervention program."
         },
         {
             "global_id": "45-5-206(4)(b)",
