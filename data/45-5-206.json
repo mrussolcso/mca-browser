@@ -1,211 +1,223 @@
 {
     "law_id": "45-5-206",
     "title_full": "Partner or family member assault -- penalty",
-    "title_short": "PFMA",
     "source_url": "https://mca.legmt.gov/bills/mca/title_0450/chapter_0050/part_0020/section_0060/0450-0050-0020-0060.html",
     "history": "En. Sec. 1, Ch. 700, L. 1985; amd. Sec. 1, Ch. 480, L. 1989; amd. Sec. 257, Ch. 800, L. 1991; amd. Sec. 2, Ch. 425, L. 1993; amd. Sec. 51, Ch. 18, L. 1995; amd. Sec. 10, Ch. 350, L. 1995; amd. Sec. 2, Ch. 245, L. 1997; amd. Sec. 5, Ch. 484, L. 1997; amd. Sec. 8, Ch. 432, L. 1999; amd. Sec. 6, Ch. 503, L. 2001; amd. Sec. 1, Ch. 438, L. 2003; amd. Sec. 1, Ch. 161, L. 2013; amd. Sec. 1, Ch. 228, L. 2013; amd. Sec. 3, Ch. 104, L. 2017; amd. Sec. 6, Ch. 394, L. 2017; amd. Sec. 1, Ch. 463, L. 2025.",
-    "subsections": [
+    "nodes": [
         {
+            "global_id": "45-5-206(0)",
             "path": "(0)",
             "parent": null,
             "indent": 0,
-            "text": null
+            "text": "(a)\tpurposely or knowingly causes bodily injury to a partner or family member;"
         },
         {
-            "path": "(1)",
-            "parent": "(0)",
-            "indent": 1,
-            "text": "A person commits the offense of partner or family member assault if the person:"
-        },
-        {
-            "path": "(1)(a)",
-            "parent": "(1)",
-            "indent": 2,
-            "text": "purposely or knowingly causes bodily injury to a partner or family member;"
-        },
-        {
-            "path": "(1)(b)",
-            "parent": "(1)",
+            "global_id": "45-5-206(0)(b)",
+            "path": "(0)(b)",
+            "parent": "45-5-206(0)",
             "indent": 2,
             "text": "negligently causes bodily injury to a partner or family member with a weapon; or"
         },
         {
-            "path": "(1)(c)",
-            "parent": "(1)",
+            "global_id": "45-5-206(0)(c)",
+            "path": "(0)(c)",
+            "parent": "45-5-206(0)",
             "indent": 2,
             "text": "purposely or knowingly causes reasonable apprehension of bodily injury in a partner or family member."
         },
         {
+            "global_id": "45-5-206(2)",
             "path": "(2)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
-            "text": "For the purposes of Title 40, chapter 15, 45-5-231 through 45-5-234, 46-6-311, and this section, the following definitions apply:"
+            "text": "For the purposes of Title 40, chapter 15, <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a> through <a class=\"statute-link\" href=\"#45-5-234\">45-5-234</a>, <a class=\"statute-link\" href=\"#46-6-311\">46-6-311</a>, and this section, the following definitions apply:"
         },
         {
+            "global_id": "45-5-206(2)(a)",
             "path": "(2)(a)",
-            "parent": "(2)",
+            "parent": "45-5-206(2)",
             "indent": 2,
             "text": "\"Family member\" means mothers, fathers, children, brothers, sisters, and other past or present family members of a household. These relationships include relationships created by adoption and remarriage, including stepchildren, stepparents, in-laws, and adoptive children and parents. These relationships continue regardless of the ages of the parties and whether the parties reside in the same household."
         },
         {
+            "global_id": "45-5-206(2)(b)",
             "path": "(2)(b)",
-            "parent": "(2)",
+            "parent": "45-5-206(2)",
             "indent": 2,
             "text": "\"Partners\" means spouses, former spouses, persons who have a child in common, and persons who have been or are currently in a dating or ongoing intimate relationship."
         },
         {
+            "global_id": "45-5-206(3)",
             "path": "(3)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
             "text": null
         },
         {
+            "global_id": "45-5-206(3)(a)",
             "path": "(3)(a)",
-            "parent": "(3)",
+            "parent": "45-5-206(3)",
             "indent": 2,
             "text": null
         },
         {
+            "global_id": "45-5-206(3)(a)(i)",
             "path": "(3)(a)(i)",
-            "parent": "(3)(a)",
+            "parent": "45-5-206(3)(a)",
             "indent": 3,
             "text": "An offender convicted of partner or family member assault shall be fined an amount not less than $100 or more than $1,000 and be imprisoned in the county jail for a term not to exceed 1 year or not less than 24 hours for a first offense."
         },
         {
+            "global_id": "45-5-206(3)(a)(ii)",
             "path": "(3)(a)(ii)",
-            "parent": "(3)(a)",
+            "parent": "45-5-206(3)(a)",
             "indent": 3,
             "text": "An offender convicted of a second offense under this section shall be fined not less than $300 or more than $1,000 and be imprisoned in the county jail not less than 72 hours or more than 1 year."
         },
         {
+            "global_id": "45-5-206(3)(a)(iii)",
             "path": "(3)(a)(iii)",
-            "parent": "(3)(a)",
+            "parent": "45-5-206(3)(a)",
             "indent": 3,
-            "text": "Upon a first or second conviction, the offender may be ordered into misdemeanor probation as provided in 46-23-1005."
+            "text": "Upon a first or second conviction, the offender may be ordered into misdemeanor probation as provided in <a class=\"statute-link\" href=\"#46-23-1005\">46-23-1005</a>."
         },
         {
+            "global_id": "45-5-206(3)(a)(iv)",
             "path": "(3)(a)(iv)",
-            "parent": "(3)(a)",
+            "parent": "45-5-206(3)(a)",
             "indent": 3,
             "text": "On a third or subsequent conviction for partner or family member assault, the offender shall be fined not less than $500 and not more than $50,000 and be imprisoned for a term not less than 30 days and not more than 5 years. If the term of imprisonment does not exceed 1 year, the person shall be imprisoned in the county jail. If the term of imprisonment exceeds 1 year, the person shall be imprisoned in the state prison."
         },
         {
+            "global_id": "45-5-206(3)(v)",
             "path": "(3)(v)",
-            "parent": "(3)",
+            "parent": "45-5-206(3)",
             "indent": 2,
             "text": "If the offense was committed within the vision or hearing of a minor, the judge shall consider the minor's presence as a factor at the time of sentencing."
         },
         {
+            "global_id": "45-5-206(3)(b)",
             "path": "(3)(b)",
-            "parent": "(3)",
+            "parent": "45-5-206(3)",
             "indent": 2,
             "text": "For the purpose of determining the number of convictions under this section, a conviction means:"
         },
         {
+            "global_id": "45-5-206(3)(i)",
             "path": "(3)(i)",
-            "parent": "(3)",
+            "parent": "45-5-206(3)",
             "indent": 2,
-            "text": "a conviction, as defined in 45-2-101, under this section;"
+            "text": "a conviction, as defined in <a class=\"statute-link\" href=\"#45-2-101\">45-2-101</a>, under this section;"
         },
         {
+            "global_id": "45-5-206(3)(i)(ii)",
             "path": "(3)(i)(ii)",
-            "parent": "(3)(i)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
             "text": "a conviction for domestic abuse under this section;"
         },
         {
+            "global_id": "45-5-206(3)(i)(iii)",
             "path": "(3)(i)(iii)",
-            "parent": "(3)(i)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
             "text": "a conviction for a violation of a statute similar to this section in another state;"
         },
         {
+            "global_id": "45-5-206(3)(i)(iv)",
             "path": "(3)(i)(iv)",
-            "parent": "(3)(i)",
+            "parent": "45-5-206(3)(i)",
             "indent": 3,
-            "text": "if the offender was a partner or family member of the victim, a conviction for aggravated assault under 45-5-202 or assault with a weapon under 45-5-213;"
+            "text": "if the offender was a partner or family member of the victim, a conviction for aggravated assault under <a class=\"statute-link\" href=\"#45-5-202\">45-5-202</a> or assault with a weapon under <a class=\"statute-link\" href=\"#45-5-213\">45-5-213</a>;"
         },
         {
+            "global_id": "45-5-206(3)(v)",
             "path": "(3)(v)",
-            "parent": "(3)",
+            "parent": "45-5-206(3)",
             "indent": 2,
-            "text": "a conviction for strangulation of a partner or family member under 45-5-215;"
+            "text": "a conviction for strangulation of a partner or family member under <a class=\"statute-link\" href=\"#45-5-215\">45-5-215</a>;"
         },
         {
+            "global_id": "45-5-206(3)(v)(vi)",
             "path": "(3)(v)(vi)",
-            "parent": "(3)(v)",
+            "parent": "45-5-206(3)(v)",
             "indent": 3,
-            "text": "a conviction in another state for an offense related to domestic violence between partners or family members, as those terms are defined in this section, regardless of what the offense is named or whether it is misdemeanor or felony, if the offense involves conduct similar to conduct that is prohibited under 45-5-202, 45-5-213, or this section; or"
+            "text": "a conviction in another state for an offense related to domestic violence between partners or family members, as those terms are defined in this section, regardless of what the offense is named or whether it is misdemeanor or felony, if the offense involves conduct similar to conduct that is prohibited under <a class=\"statute-link\" href=\"#45-5-202\">45-5-202</a>, <a class=\"statute-link\" href=\"#45-5-213\">45-5-213</a>, or this section; or"
         },
         {
+            "global_id": "45-5-206(3)(v)(vii)",
             "path": "(3)(v)(vii)",
-            "parent": "(3)(v)",
+            "parent": "45-5-206(3)(v)",
             "indent": 3,
             "text": "a forfeiture of bail or collateral deposited to secure the defendant's appearance in court in this state or in another state for a violation of a statute similar to this section, which forfeiture has not been vacated."
         },
         {
+            "global_id": "45-5-206(4)",
             "path": "(4)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
-            "text": null
+            "text": "(a) An offender convicted of partner or family member assault is required to pay for and complete a counseling assessment with a focus on violence, controlling behavior, dangerousness, and chemical dependency. An investigative criminal justice report, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, must be copied and sent to the offender intervention program, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, to assist the counseling provider in properly assessing the offender's need for counseling and treatment. Counseling providers shall take all required precautions to ensure the confidentiality of the report. If the report contains confidential information relating to the victim's location or not related to the charged offense, that information must be deleted from the report prior to being sent to the offender intervention program."
         },
         {
-            "path": "(4)(a)",
-            "parent": "(4)",
-            "indent": 2,
-            "text": null
-        },
-        {
+            "global_id": "45-5-206(4)(b)",
             "path": "(4)(b)",
-            "parent": "(4)",
+            "parent": "45-5-206(4)",
             "indent": 2,
-            "text": "The offender shall complete all recommendations for counseling, referrals, attendance at psychoeducational groups, or treatment, including any indicated chemical dependency treatment, made by the counseling provider. The counseling provider must be approved by the court. The counseling must include a preliminary assessment for counseling, as defined in 45-5-231. The offender shall complete a minimum of 40 hours of counseling. The counseling may include attendance at psychoeducational groups, as defined in 45-5-231, in addition to the assessment. The preliminary assessment and counseling that holds the offender accountable for the offender's violent or controlling behavior must meet the standards established pursuant to 44-7-210 and be:"
+            "text": "The offender shall complete all recommendations for counseling, referrals, attendance at psychoeducational groups, or treatment, including any indicated chemical dependency treatment, made by the counseling provider. The counseling provider must be approved by the court. The counseling must include a preliminary assessment for counseling, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>. The offender shall complete a minimum of 40 hours of counseling. The counseling may include attendance at psychoeducational groups, as defined in <a class=\"statute-link\" href=\"#45-5-231\">45-5-231</a>, in addition to the assessment. The preliminary assessment and counseling that holds the offender accountable for the offender's violent or controlling behavior must meet the standards established pursuant to <a class=\"statute-link\" href=\"#44-7-210\">44-7-210</a> and be:"
         },
         {
+            "global_id": "45-5-206(4)(i)",
             "path": "(4)(i)",
-            "parent": "(4)",
+            "parent": "45-5-206(4)",
             "indent": 2,
             "text": "with a person licensed under Title 37, chapter 17, 22, or 23;"
         },
         {
+            "global_id": "45-5-206(4)(i)(ii)",
             "path": "(4)(i)(ii)",
-            "parent": "(4)(i)",
+            "parent": "45-5-206(4)(i)",
             "indent": 3,
-            "text": "with a professional person as defined in 53-21-102; or"
+            "text": "with a professional person as defined in <a class=\"statute-link\" href=\"#53-21-102\">53-21-102</a>; or"
         },
         {
+            "global_id": "45-5-206(4)(i)(iii)",
             "path": "(4)(i)(iii)",
-            "parent": "(4)(i)",
+            "parent": "45-5-206(4)(i)",
             "indent": 3,
             "text": "in a specialized domestic violence intervention program."
         },
         {
+            "global_id": "45-5-206(4)(c)",
             "path": "(4)(c)",
-            "parent": "(4)",
+            "parent": "45-5-206(4)",
             "indent": 2,
             "text": "The minimum counseling and attendance at psychoeducational groups provided in subsection (4)(b) must be directed to the violent or controlling conduct of the offender. Other issues indicated by the assessment may be addressed in additional counseling beyond the minimum 40 hours. Subsection (4)(b) does not prohibit the placement of the offender in other appropriate treatment if the court determines that there is no available treatment program directed to the violent or controlling conduct of the offender."
         },
         {
+            "global_id": "45-5-206(5)",
             "path": "(5)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
-            "text": "In addition to any sentence imposed under subsections (3) and (4), the court shall require the offender to pay the victim's reasonable actual medical, housing, wage loss, and counseling costs. The amount, method, and time of payment must be determined in the same manner as provided in 46-18-244."
+            "text": "In addition to any sentence imposed under subsections (3) and (4), the court shall require the offender to pay the victim's reasonable actual medical, housing, wage loss, and counseling costs. The amount, method, and time of payment must be determined in the same manner as provided in <a class=\"statute-link\" href=\"#46-18-244\">46-18-244</a>."
         },
         {
+            "global_id": "45-5-206(6)",
             "path": "(6)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
             "text": "In addition to the requirements of subsection (5), if financially able, the offender must be ordered to pay for the costs of the offender's probation, if probation is ordered by the court."
         },
         {
+            "global_id": "45-5-206(7)",
             "path": "(7)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
-            "text": "The court may prohibit an offender convicted under this section from possession or use of the firearm used in the assault. The court may enforce 45-8-323 if a firearm was used in the assault."
+            "text": "The court may prohibit an offender convicted under this section from possession or use of the firearm used in the assault. The court may enforce <a class=\"statute-link\" href=\"#45-8-323\">45-8-323</a> if a firearm was used in the assault."
         },
         {
+            "global_id": "45-5-206(8)",
             "path": "(8)",
-            "parent": "(0)",
+            "parent": "45-5-206(0)",
             "indent": 1,
             "text": "The court shall provide an offender with a written copy of the offender's sentence at the time of sentencing or within 2 weeks of sentencing if the copy is sent electronically or by mail."
         }
