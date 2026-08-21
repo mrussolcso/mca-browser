@@ -1,9 +1,16 @@
 name: Run Statute Scraper
 
 on:
-  workflow_dispatch: # Allows manual triggers from the GitHub UI
-  push:
-    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      title_num:
+        description: 'Title Number (e.g., 45)'
+        required: true
+        default: '45'
+      chapter_num:
+        description: 'Chapter Number (e.g., 5)'
+        required: true
+        default: '5'
 
 jobs:
   build-and-scrape:
@@ -26,6 +33,8 @@ jobs:
       - name: Run Scraper Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TITLE_NUM: ${{ github.event.inputs.title_num }}
+          CHAPTER_NUM: ${{ github.event.inputs.chapter_num }}
         run: python scraper.py
 
       - name: Commit updated JSON data
@@ -34,7 +43,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           if ! git diff --staged --quiet; then
-            git commit -m "Automated update of statute JSON files"
+            git commit -m "Automated update of Title ${{ github.event.inputs.title_num }} Chapter ${{ github.event.inputs.chapter_num }} JSON files"
             git pull --rebase origin main
             git push
           fi
