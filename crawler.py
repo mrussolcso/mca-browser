@@ -1,19 +1,18 @@
+import concurrent.futures
 import hashlib
 import json
 import logging
-import os
 import re
 import time
-import zipfile
+from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# Official state bulk download URL (adjust year if necessary)
-BULK_ZIP_URL = "https://mca.legmt.gov/bills/mca/mca_html.zip"  
-ZIP_DEST = "mca_html.zip"
-EXTRACT_DIR = "mca_extracted"
+BASE_URL = "https://mca.legmt.gov/bills/mca/"
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MCA-Sitemap-Indexer/1.0"}
+MAX_WORKERS = 15  # Number of concurrent requests
 
 
 def compute_hash(text: str) -> str:
@@ -21,66 +20,101 @@ def compute_hash(text: str) -> str:
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 
-def download_and_extract():
-    logging.info("Downloading bulk MCA zip file...")
-    response = requests.get(BULK_ZIP_URL, stream=True, timeout=60)
-    if response.status_code == 200:
-        with open(ZIP_DEST, "wb") as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
-        logging.info("Download complete. Extracting files...")
-        
-        with zipfile.ZipFile(ZIP_DEST, 'r') as zip_ref:
-            zip_ref.extractall(EXTRACT_DIR)
-        logging.info("Extraction complete.")
-        return True
-    else:
-        logging.error(f"Failed to download bulk archive. Status: {response.status_code}")
-        return False
+def fetch_soup(url: str, retries=3):
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=15)
+            if response.status_code == 200:
+                return BeautifulSoup(response.text, "html.parser")
+        except Exception:
+            if attempt < retries - 1:
+                time.sleep(1 * (attempt + 1))
+                continue
+    return None
 
 
-def parse_local_statutes():
-    sitemap = []
-    logging.info("Parsing local HTML files...")
+def scrape_section(s_url, p_url):
+    s_soup = fetch_soup(s_url)
+    if not s_soup:
+        return None
+
+    s_link_elem = s_soup.find("a", href=True)
+    citation = s_url.split("/")[-1].replace(".html", "")
     
-    # Walk through extracted files on disk
-    for root, _, files in os.walk(EXTRACT_DIR):
-        for file in files:
-            if file.endswith(".html") and not ("index" in file or "title" in file):
-                filepath = os.path.join(root, file)
-                
-                with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-                    soup = BeautifulSoup(f.read(), "html.parser")
+    heading_tag = s_soup.find(["h1", "h2", "h3", "p"])
+    sec_name = heading_tag.text.strip() if heading_tag else "Unknown Section"
 
-                # Extract section citation and title from HTML contents
-                heading = soup.find(["h1", "h2", "h3", "p"])
-                sec_name = heading.text.strip() if heading else file
-                
-                # Citation extraction (e.g., 1-1-101 from filename or content)
-                citation = file.replace(".html", "")
+    history_text = "No history recorded"
+    history_elem = s_soup.find(string=re.compile(r"History:", re.IGNORECASE))
+    if history_elem and history_elem.parent:
+        history_text = history_elem.parent.text.replace("History:", "").strip()
 
-                # Extract history string
-                history_text = "No history recorded"
-                history_elem = soup.find(string=re.compile(r"History:", re.IGNORECASE))
-                if history_elem and history_elem.parent:
-                    history_text = history_elem.parent.text.replace("History:", "").strip()
+    return {
+        "citation": citation,
+        "url": s_url,
+        "section_name": sec_name,
+        "raw_history": history_text,
+        "history_hash": compute_hash(history_text),
+        "last_indexed": time.strftime("%Y-%m-%d")
+    }
 
-                sitemap.append({
-                    "citation": citation,
-                    "file_path": filepath,
-                    "section_name": sec_name,
-                    "raw_history": history_text,
-                    "history_hash": compute_hash(history_text),
-                    "last_indexed": time.strftime("%Y-%m-%d")
-                })
 
-    output_filename = "mca_sitemap_latest.json"
+def run_crawler():
+    logging.info("Starting High-Speed MCA Sitemap Crawl...")
+    sitemap = []
+    
+    soup = fetch_soup(BASE_URL)
+    if not soup:
+        logging.error("Could not reach MCA homepage.")
+        return
+
+    title_links = soup.find_all("a", href=re.compile(r"title_"))
+    section_tasks = []
+
+    for t_link in title_links:
+        t_url = urljoin(BASE_URL, t_link.get("href"))
+        t_soup = fetch_soup(t_url)
+        if not t_soup:
+            continue
+
+        chap_links = t_soup.find_all("a", href=re.compile(r"chapter_"))
+        for c_link in chap_links:
+            c_url = urljoin(t_url, c_link.get("href"))
+            c_soup = fetch_soup(c_url)
+            if not c_soup:
+                continue
+
+            part_links = c_soup.find_all("a", href=re.compile(r"part_"))
+            for p_link in part_links:
+                p_url = urljoin(c_url, p_link.get("href"))
+                p_soup = fetch_soup(p_url)
+                if not p_soup:
+                    continue
+
+                sec_links = p_soup.find_all("a", href=re.compile(r"\d+-\d+-\d+\.html|\.html"))
+                for s_link in sec_links:
+                    s_url = urljoin(p_url, s_link.get("href"))
+                    section_tasks.append((s_url, p_url))
+
+    logging.info(f"Discovered {len(section_tasks)} sections. Fetching concurrently...")
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(scrape_section, s_url, p_url): s_url for s_url, p_url in section_tasks}
+        
+        for future in concurrent.futures.as_completed(futures):
+            res = future.result()
+            if res:
+                sitemap.append(res)
+
+    output_filename = f"mca_sitemap_{time.strftime('%Y%m%d')}.json"
     with open(output_filename, "w", encoding="utf-8") as f:
         json.dump(sitemap, f, indent=2)
 
-    logging.info(f"Fast indexing complete! Total sections indexed: {len(sitemap)}")
+    with open("mca_sitemap_latest.json", "w", encoding="utf-8") as f:
+        json.dump(sitemap, f, indent=2)
+
+    logging.info(f"Crawl complete! Total sections mapped: {len(sitemap)}. Saved.")
 
 
 if __name__ == "__main__":
-    if download_and_extract():
-        parse_local_statutes()
+    run_crawler()
