@@ -1,0 +1,4725 @@
+[
+  {
+    "title_num": "1",
+    "title_raw": "TITLE 1. GENERAL LAWS AND DEFINITIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. STATUTORY CONSTRUCTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. MAXIMS OF JURISPRUDENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. INTERPRETATION OF INSTRUMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. PROOF AND ACKNOWLEDGMENT OF INSTRUMENTS NOTARIES PUBLIC",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. OATHS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. PUBLICATION AND UPDATING OF THE CODE CODE COMMISSIONER",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. COMMISSION ON UNIFORM STATE LAWS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. INTERNATIONAL RELATIONS (Repealed)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "2",
+    "title_raw": "TITLE 2. GOVERNMENT STRUCTURE AND ADMINISTRATION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. SOVEREIGNTY AND JURISDICTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. STANDARDS OF CONDUCT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. PUBLIC PARTICIPATION IN GOVERNMENTAL OPERATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. ADMINISTRATIVE PROCEDURE ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. MONTANA NEGOTIATED RULEMAKING ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. PUBLIC RECORDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. STUDIES, REPORTS, AND AUDITS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. LEGISLATIVE REVIEW",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. LIABILITY EXPOSURE AND INSURANCE COVERAGE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. STATE AGENCY ACTIONS AFFECTING PRIVATE PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. LEGAL AUTHORITY FOR GOVERNMENT ACTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. GOVERNMENT PLANNING ANDPERFORMANCE REPORTING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. EXECUTIVE BRANCH OFFICERS AND AGENCIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. PUBLIC OFFICERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. PROPERTY AND SYSTEMS DEVELOPMENT AND MANAGEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. STATE EMPLOYEE CLASSIFICATION, COMPENSATION, AND BENEFITS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. TERMINATION OF STATE AGENCIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. ELECTRONIC TRANSACTIONS WITH STATE AGENCIES AND LOCAL GOVERNMENTS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. ARTIFICIAL INTELLIGENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "89",
+        "chapter_raw": "CHAPTER 89. MONTANA STATEHOOD CENTENNIAL (Repealed and Terminated)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "3",
+    "title_raw": "TITLE 3. JUDICIARY, COURTS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. COURTS AND JUDICIAL OFFICERS GENERALLY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. SUPREME COURT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. DISTRICT COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. MUNICIPAL COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. WATER COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. WORKERS' COMPENSATION COURT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. JUSTICES' COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. CITY COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. SMALL CLAIMS COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. JURIES AND JURORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. ASBESTOS CLAIMS COURT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "5",
+    "title_raw": "TITLE 5. LEGISLATIVE BRANCH",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. CONGRESSIONAL, SENATORIAL, AND REPRESENTATIVE DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. LEGISLATURE -- COMPOSITION AND ORGANIZATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. SPECIAL SESSIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. BILLS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. LEGISLATIVE PROCEDURES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. LEGISLATIVE INTERNS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. LOBBYING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. LEGISLATIVE COUNCIL AND PUBLICATION OF LAWS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. LEGISLATIVE FINANCE AND DATA ANALYTICS ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. LEGISLATIVE AUDIT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. ADMINISTRATIVE CODE COMMITTEE (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. LEGISLATIVE CONSUMER COMMITTEE CONSUMER COUNSEL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. ENVIRONMENTAL QUALITY COUNCIL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. CAPITOL BUILDING AND PLANNING -- RESTORATION (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. REVENUE AND TRANSPORTATION INTERIM COMMITTEE (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. COMMITTEE ON INDIAN AFFAIRS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. EDUCATIONAL COMMITTEES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. COMMITTEE ON PUBLIC EMPLOYEE RETIREMENT SYSTEMS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. COMMITTEE ON CHILDREN AND FAMILIES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. COMMITTEE ON STATE MANAGEMENT SYSTEMS (Repealed)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "7",
+    "title_raw": "TITLE 7. LOCAL GOVERNMENT",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. CREATION, ALTERATION, AND ABANDONMENT OF LOCAL GOVERNMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ALTERNATIVE FORMS OF LOCAL GOVERNMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. OFFICERS AND EMPLOYEES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. GENERAL OPERATION AND CONDUCT OF BUSINESS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. FINANCIAL ADMINISTRATION AND TAXATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. DEBT MANAGEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ACQUISITION, TRANSFER, AND MANAGEMENT OF PROPERTY AND BUILDINGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. REGIONAL RESOURCE AUTHORITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. GENERAL PROVISIONS RELATED TO SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. IMPROVEMENT DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. UTILITY SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. TRANSPORTATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. HOUSING AND CONSTRUCTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. CULTURE, SOCIAL SERVICES, AND RECREATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. BUSINESS, AGRICULTURE, AND LIVESTOCK SERVICES AND REGULATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. WEED AND PEST CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. DOMESTIC ANIMAL CONTROL AND PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. GENERAL EMERGENCY AND PROTECTIVE SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. LAW ENFORCEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. FIRE PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. MEDICAL SERVICES AND BOARDING HOMES FOR THE AGED",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. CEMETERY SERVICES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "10",
+    "title_raw": "TITLE 10. MILITARY AFFAIRS AND DISASTER AND EMERGENCY SERVICES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. MILITIA",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. VETERANS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. DISASTER AND EMERGENCY SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. STATE EMERGENCY TELEPHONE SYSTEM",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "13",
+    "title_raw": "TITLE 13. ELECTIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. REGISTRATION OF ELECTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. PRECINCTS AND POLLING PLACES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. ELECTION JUDGES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. PRIMARY ELECTIONS AND NOMINATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. ELECTION PROCLAMATION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. ELECTION SUPPLIES AND BALLOTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. ELECTION PROCEDURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. NONPARTISAN ELECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. CANVASSING, RETURNS, AND CERTIFICATES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. RECOUNTS AND TIE VOTES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. VOTING SYSTEMS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. ELECTRONIC VOTING SYSTEMS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. MAIL BALLOT ELECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. MONTANA ABSENT UNIFORMED SERVICES AND OVERSEAS VOTER ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. YOUTH VOTING ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. ELECTIONS FOR FEDERAL OFFICE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. CONVENTION TO RATIFY AMENDMENTS TO UNITED STATES CONSTITUTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. STATEWIDE BALLOT ISSUES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "28",
+        "chapter_raw": "CHAPTER 28. LOCAL GOVERNMENT BALLOT ISSUES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. ELECTION AND CAMPAIGN PRACTICES AND CRIMINAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. CONTESTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. CONTROL OF CAMPAIGN PRACTICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. POLITICAL PARTIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "15",
+    "title_raw": "TITLE 15. TAXATION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. TAX ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. MONTANA TAX APPEAL BOARD",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. PROPERTY SUBJECT TO TAXATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. APPRAISAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ASSESSMENT PROCEDURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. EQUALIZATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. PROPERTY TAX LEVIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. PROPERTY TAX APPEALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. COLLECTION OF PROPERTY TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. TAX LIENS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. OWNERSHIP INTERESTS IN LAND SOLD FOR TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. CENTRALLY ASSESSED PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. SPECIAL PROPERTY TAX APPLICATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. DANGEROUS DRUG TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. AMBULANCE PROVIDER ASSESSMENT FEE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. INDIVIDUAL INCOME TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. CORPORATE INCOME TAX OR ALTERNATIVE CORPORATE INCOME TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. ENERGY-RELATED AND ECOLOGICAL TAX INCENTIVES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. SMALL BUSINESS INVESTMENT INCENTIVES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. COAL PRODUCER'S LICENSE TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. COAL SEVERANCE TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. OIL AND GAS PRODUCTION TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. MINING LICENSE TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. RESOURCE INDEMNITY TRUST AND GROUND WATER ASSESSMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "39",
+        "chapter_raw": "CHAPTER 39. TAXATION OF BENTONITE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "44",
+        "chapter_raw": "CHAPTER 44. FOREST LANDS TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "50",
+        "chapter_raw": "CHAPTER 50. PUBLIC CONTRACTOR'S FEES AND TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "51",
+        "chapter_raw": "CHAPTER 51. ELECTRICAL ENERGY PRODUCER'S LICENSE TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "52",
+        "chapter_raw": "CHAPTER 52. COLLECTION OF TRANSPORTATION AND COMMUNICATIONS LICENSE TAXES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "53",
+        "chapter_raw": "CHAPTER 53. RETAIL TELECOMMUNICATIONS EXCISE TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "54",
+        "chapter_raw": "CHAPTER 54. EXPRESS COMPANY LICENSE TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "55",
+        "chapter_raw": "CHAPTER 55. FREIGHT LINE COMPANY LICENSE TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "56",
+        "chapter_raw": "CHAPTER 56. SLEEPING CAR COMPANY LICENSE TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "57",
+        "chapter_raw": "CHAPTER 57. STORE LICENSES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "58",
+        "chapter_raw": "CHAPTER 58. COAL RETAILER'S LICENSE TAX (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "59",
+        "chapter_raw": "CHAPTER 59. CEMENT TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "60",
+        "chapter_raw": "CHAPTER 60. NURSING FACILITY UTILIZATION FEE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "61",
+        "chapter_raw": "CHAPTER 61. MEDICAL CARE SAVINGS ACCOUNT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "62",
+        "chapter_raw": "CHAPTER 62. FAMILY EDUCATION SAVINGS ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "63",
+        "chapter_raw": "CHAPTER 63. FIRST-TIME HOME BUYER SAVINGS ACCOUNT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "64",
+        "chapter_raw": "CHAPTER 64. TAXATION OF DRUGS AND DRUG LICENSING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "65",
+        "chapter_raw": "CHAPTER 65. LODGING FACILITY USE TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "66",
+        "chapter_raw": "CHAPTER 66. HOSPITAL FACILITY UTILIZATION FEE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "67",
+        "chapter_raw": "CHAPTER 67. INTERMEDIATE CARE FACILITY FOR THE DEVELOPMENTALLY DISABLED -- UTILIZATION FEE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "68",
+        "chapter_raw": "CHAPTER 68. SALES TAX",
+        "statutes": []
+      },
+      {
+        "chapter_num": "70",
+        "chapter_raw": "CHAPTER 70. GASOLINE AND VEHICLE FUELS TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "71",
+        "chapter_raw": "CHAPTER 71. LICENSE TAX ON VEHICLES PROPELLED BY LIQUEFIED PETROLEUM GAS (Repealed and Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "72",
+        "chapter_raw": "CHAPTER 72. ELECTRICAL GENERATION TAX AND INVASIVE SPECIES FEE",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "16",
+    "title_raw": "TITLE 16. ALCOHOL, TOBACCO, AND MARIJUANA",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ADMINISTRATION AND TAXATION OF ALCOHOL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. LIQUOR STORES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. CONTROL OF LIQUOR, BEER, AND WINE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. LICENSE ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. IDENTIFICATION CARDS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. ENFORCEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. REGULATION OF CIGARETTE MARKETING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. TAXATION OF TOBACCO PRODUCTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MARIJUANA REGULATION AND TAXATION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "17",
+    "title_raw": "TITLE 17. STATE FINANCE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. ACCOUNTING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. FEDERAL REVENUES AND ENDOWMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. DEBT COLLECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. PUBLIC BOND ISSUES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. DEPOSITS AND INVESTMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. BUDGETING AND APPROPRIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. DISBURSEMENT AND EXPENDITURE",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "18",
+    "title_raw": "TITLE 18. PUBLIC CONTRACTS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. PUBLIC CONTRACTS GENERALLY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. CONSTRUCTION CONTRACTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. STATE BUILDING LEASES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. MONTANA PROCUREMENT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. SPECIAL PURCHASING CONDITIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. SALES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. PRINTING AND LEGAL NOTICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. PROCUREMENT OF SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. STATE-TRIBAL COOPERATIVE AGREEMENTS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "19",
+    "title_raw": "TITLE 19. PUBLIC RETIREMENT SYSTEMS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. SOCIAL SECURITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. PUBLIC EMPLOYEES' RETIREMENT GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. PUBLIC EMPLOYEES' RETIREMENT SYSTEM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. TEACHERS' RETIREMENT (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. JUDGES' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. HIGHWAY PATROL OFFICERS' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. SHERIFFS' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. GAME WARDENS' AND PEACE OFFICERS' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. POLICE RETIREMENT -- STATEWIDE PLAN",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. POLICE RETIREMENT -- LOCAL FUNDS (Renumbered)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. FIREFIGHTERS' RETIREMENT (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. VOLUNTEER FIREFIGHTERS' COMPENSATION ACT (Renumbered)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. FIREFIGHTERS' UNIFIED RETIREMENT SYSTEM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. RETIREMENT ADJUSTMENT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. VOLUNTEER FIREFIGHTERS' COMPENSATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. FIREFIGHTERS' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. POLICE RETIREMENT -- LOCAL FUNDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. TEACHERS' RETIREMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. UNIVERSITY SYSTEM RETIREMENT PROGRAM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "50",
+        "chapter_raw": "CHAPTER 50. DEFERRED COMPENSATION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "20",
+    "title_raw": "TITLE 20. EDUCATION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. STATE BOARDS AND COMMISSIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ELECTED OFFICIALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. TEACHERS, SUPERINTENDENTS, AND PRINCIPALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. PUPILS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. SCHOOL DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. SCHOOL INSTRUCTION AND SPECIAL PROGRAMS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. MONTANA SCHOOL FOR THE DEAF AND BLIND",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. FINANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. TRANSPORTATION AND FOOD SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. COMMUNITY CHOICE SCHOOLS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. COMMUNITY COLLEGE DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. VOCATIONAL-TECHNICAL CENTER SYSTEM (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. SCHOOL ELECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. UNIVERSITY SYSTEM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. STUDENT FINANCIAL ASSISTANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. POSTSECONDARY EDUCATIONAL INSTITUTIONS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. FIRE SERVICES TRAINING SCHOOL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. MONTANA EDUCATIONAL TELECOMMUNICATIONS NETWORK",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "22",
+    "title_raw": "TITLE 22. LIBRARIES, ARTS, AND ANTIQUITIES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. LIBRARIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. ARTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ANTIQUITIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "23",
+    "title_raw": "TITLE 23. PARKS, RECREATION, SPORTS, AND GAMBLING",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. PARKS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. RECREATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ATHLETICS -- BOXING (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. HORSERACING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. GAMBLING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. AMUSEMENT GAMES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. STATE LOTTERY",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "25",
+    "title_raw": "TITLE 25. CIVIL PROCEDURE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. VENUE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. SERVICE OF PROCESS AND OTHER PAPERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. PLEADINGS, MOTIONS, AND OTHER PAPERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. PARTIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. TRIALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. DEPOSIT IN COURT -- DELIVERY TO PARTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. JUDGMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. COSTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. NEW TRIAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. APPEAL TO SUPREME COURT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. EXECUTION OF JUDGMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. PROCEEDINGS IN AID OF EXECUTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. LIABILITY OF JOINT DEBTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. UNIFORM DISTRICT COURT RULES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. RULES OF CIVIL PROCEDURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. RULES OF APPELLATE PROCEDURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. MONTANA JUSTICE AND CITY COURT RULES OF CIVIL PROCEDURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. MONTANA UNIFORM RULES FOR THE JUSTICE AND CITY COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30A. MONTANA UNIFORM MUNICIPAL COURT RULES OF APPEAL TO DISTRICT COURT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. PROCEDURE IN MUNICIPAL COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. PROCEDURE IN JUSTICES' COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. PROCEDURE IN CITY COURTS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. APPEAL TO DISTRICT COURT FROM JUSTICES' AND CITY COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. SMALL CLAIMS PROCEDURE -- DISTRICT COURT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. SMALL CLAIMS PROCEDURE -- JUSTICE'S COURT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "40",
+        "chapter_raw": "CHAPTER 40. ALTERNATIVE DISPUTE RESOLUTION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "26",
+    "title_raw": "TITLE 26. EVIDENCE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. STATUTORY PROVISIONS ON EVIDENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. SUBPOENAS AND WITNESSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. EFFECT OF FORMER JUDGMENTS AND ORDERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. MONTANA RULES OF EVIDENCE",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "27",
+    "title_raw": "TITLE 27. CIVIL LIABILITY, REMEDIES, AND LIMITATIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. AVAILABILITY OF REMEDIES -- LIABILITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. STATUTES OF LIMITATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. UNIFORM ARBITRATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. MONTANA MEDICAL LEGAL PANEL ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. SUBMISSION OF CONTROVERSY WITHOUT ACTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. UNIFORM DECLARATORY JUDGMENTS ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. CONFESSION OF JUDGMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MONTANA CHIROPRACTIC LEGAL PANEL ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. PROVISIONAL REMEDIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. ARREST AND BAIL IN CIVIL ACTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. CLAIM AND DELIVERY OF PERSONAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. PREJUDGMENT ATTACHMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. INJUNCTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. RECEIVERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. CERTIORARI -- WRIT OF REVIEW",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. MANDAMUS -- WRIT OF MANDATE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. WRIT OF PROHIBITION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "28",
+        "chapter_raw": "CHAPTER 28. QUO WARRANTO",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. NUISANCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. CHANGE OF NAME",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. JUDICIAL DETERMINATION OF BIRTH DATE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. MONTANA RELIGIOUS FREEDOM RESTORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. UNIFORM PUBLIC EXPRESSION PROTECTION ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "28",
+    "title_raw": "TITLE 28. CONTRACTS AND OTHER OBLIGATIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. OBLIGATIONS IN GENERAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. CONTRACTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. INTERPRETATION OF CONTRACTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. AGENCY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. GUARANTY, INDEMNITY, AND SURETYSHIP",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "30",
+    "title_raw": "TITLE 30. TRADE AND COMMERCE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. UNIFORM COMMERCIAL CODE GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. UNIFORM COMMERCIAL CODE SALES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2A. UNIFORM COMMERCIAL CODE LEASES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. UNIFORM COMMERCIAL CODE NEGOTIABLE INSTRUMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. UNIFORM COMMERCIAL CODE BANK DEPOSITS AND COLLECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4A. UNIFORM COMMERCIAL CODE FUNDS TRANSFERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. UNIFORM COMMERCIAL CODE LETTERS OF CREDIT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. UNIFORM COMMERCIAL CODE BULK TRANSFERS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. UNIFORM COMMERCIAL CODE -- WAREHOUSE RECEIPTS, BILLS OF LADING, AND OTHER DOCUMENTS OF TITLE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. UNIFORM COMMERCIAL CODE INVESTMENT SECURITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. UNIFORM COMMERCIAL CODE SECURED TRANSACTIONS (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9A. UNIFORM COMMERCIAL CODE SECURED TRANSACTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. SECURITIES REGULATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. SALES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. WEIGHTS, MEASURES, STANDARDS, AND LABELING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12A. UNIFORM COMMERCIAL CODEEMERGING TECHNOLOGIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. ASSUMED BUSINESS NAMES, TRADEMARKS, AND RELATED RIGHTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. UNFAIR TRADE PRACTICES AND CONSUMER PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. FOREIGN-TRADE ZONES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. SMALL BUSINESS LICENSING COORDINATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. ELECTRONIC DIRECTORY OF MONTANA PRODUCTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. ELECTRONIC TRANSACTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. RENTAL AND RENTAL-PURCHASE AGREEMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. FIREARMS AND AMMUNITION MADE IN MONTANA",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. NONFERROUS METAL TRANSACTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. GENETIC INFORMATION PRIVACY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. DIGITAL ASSETS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. TECHNOLOGY AND DATA MANAGEMENT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "31",
+    "title_raw": "TITLE 31. CREDIT TRANSACTIONS AND RELATIONSHIPS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. CREDIT TRANSACTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. DEBTOR AND CREDITOR RELATIONSHIPS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RELATED CREDIT PRACTICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. LITIGATION FINANCING",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "32",
+    "title_raw": "TITLE 32. FINANCIAL INSTITUTIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. BANKS AND TRUST COMPANIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. MUTUAL SAVINGS AND LOAN ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. CREDIT UNIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. DEVELOPMENT CORPORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. CONSUMER LOAN BUSINESSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. ELECTRONIC FUNDS TRANSFER ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. ESCROW BUSINESSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. MONTANA FOREIGN CAPITAL DEPOSITORY ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. RESIDENTIAL MORTGAGE BROKERS, LENDERS, SERVICERS, AND LOAN ORIGINATORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. MONTANA RESIDENTIAL MORTGAGE LENDER LICENSING ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. BUSINESS AND INDUSTRIAL DEVELOPMENT CORPORATIONS(Repealed)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "33",
+    "title_raw": "TITLE 33. INSURANCE AND INSURANCE COMPANIES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ADMINISTRATION AND GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. REGULATION OF INSURANCE COMPANIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. DOMESTIC STOCK AND MUTUAL INSURERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. FARM MUTUAL INSURERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. RECIPROCAL INSURERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. BENEVOLENT ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. FRATERNAL BENEFIT SOCIETIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. INSURANCE ASSISTANCE PLANS (Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. PROFESSIONAL LIABILITY INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. INSURANCE GUARANTY ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. LIABILITY RISK RETENTION AND PURCHASING GROUPS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. INSURER INVESTMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. INSURANCE PREMIUM FINANCE COMPANIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. THE INSURANCE CONTRACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. RATES -- RATING AND ADVISORY ORGANIZATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. INSURANCE PRODUCERS, ADJUSTERS, CONSULTANTS, AND ADMINISTRATORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. UNFAIR TRADE PRACTICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. INSURANCE INFORMATION AND PRIVACY PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. LIFE INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. CREDIT LIFE AND DISABILITY INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. DISABILITY INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. CASUALTY INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. PROPERTY INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. MONTANA TITLE INSURANCE ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. SURETYSHIP",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. INDEPENDENT LIABILITY FUND",
+        "statutes": []
+      },
+      {
+        "chapter_num": "28",
+        "chapter_raw": "CHAPTER 28. CAPTIVE INSURANCE COMPANIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. HEALTH SERVICE CORPORATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. HEALTH MAINTENANCE ORGANIZATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. HEALTH UTILIZATION REVIEW",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. PROPERTY AND CASUALTY UTILIZATION REVIEW",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. MULTIPLE EMPLOYER WELFARE ARRANGEMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. MANAGED CARE PLAN NETWORK ADEQUACY AND QUALITY ASSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. REGULATION OF HEALTH CARRIERS AND MANAGED CARE ENTITIES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. MEDICAL CARE AND PHARMACY DISCOUNT CARDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "39",
+        "chapter_raw": "CHAPTER 39. INTERSTATE INSURANCE PRODUCT REGULATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "40",
+        "chapter_raw": "CHAPTER 40. PATIENT-CENTERED MEDICAL HOMES (Terminated)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "35",
+    "title_raw": "TITLE 35. CORPORATIONS, PARTNERSHIPS, AND ASSOCIATIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. MONTANA BENEFIT CORPORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. NONPROFIT CORPORATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RELIGIOUS CORPORATIONS SOLE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. MONTANA PROFESSIONAL CORPORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. BUSINESS TRUSTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. INVOLUNTARY CORPORATE DISSOLUTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. MODEL REGISTERED AGENTS ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. MONTANA LIMITED LIABILITY COMPANY ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. MONTANA CLOSE CORPORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. PARTNERSHIPS IN GENERAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. PARTNERSHIP -- USE OF FICTITIOUS NAME",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. LIMITED PARTNERSHIPS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. MINING PARTNERSHIPS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. MONTANA BUSINESS CORPORATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. COOPERATIVE ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. AGRICULTURAL ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. COOPERATIVE AGRICULTURAL MARKETING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. RURAL COOPERATIVE UTILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. ELECTRICITY BUYING COOPERATIVE ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. CEMETERY ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. MAUSOLEUM AND COLUMBARIUM AUTHORITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. TRANSACTIONS WITH FOREIGN ADVERSARIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "37",
+    "title_raw": "TITLE 37. PROFESSIONS AND OCCUPATIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. GENERAL PROVISIONS RELATING TO HEALTH CARE PRACTITIONERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. MEDICINE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. DENTISTRY AND DENTAL HYGIENE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. OSTEOPATHY (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. PODIATRY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. PHARMACY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. NURSING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. NURSING HOME ADMINISTRATORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. OPTOMETRY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. PHYSICAL THERAPY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. CHIROPRACTIC",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. ACUPUNCTURE PRACTICE ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. RADIOLOGIC TECHNOLOGISTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. SPEECH-LANGUAGE PATHOLOGISTS AND AUDIOLOGISTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. HEARING AID DISPENSERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. PSYCHOLOGISTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. VETERINARY MEDICINE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. MORTICIANS AND FUNERAL SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. PHYSICIAN ASSISTANTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. DIETITIANS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. SOCIAL WORK(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. PROFESSIONAL COUNSELING(Renumbered, Repealed, and Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. OCCUPATIONAL THERAPY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. NUTRITIONISTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. NATUROPATHIC PHYSICIANS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. DIRECT-ENTRY MIDWIFERY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "28",
+        "chapter_raw": "CHAPTER 28. RESPIRATORY CARE PRACTITIONERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "29",
+        "chapter_raw": "CHAPTER 29. DENTURITRY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. BARBERS (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. BARBERING, COSMETOLOGY, ELECTROLOGY, ESTHETICS, AND MANICURING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. ELECTROLOGY (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. MASSAGE THERAPY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. CLINICAL LABORATORY SCIENCE PRACTITIONERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. ADDICTION COUNSELORS(Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. ATHLETIC TRAINERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. MARRIAGE AND FAMILY THERAPISTS(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. BEHAVIORAL HEALTH PEER SUPPORT SPECIALISTS(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "39",
+        "chapter_raw": "CHAPTER 39. BEHAVIORAL HEALTH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "40",
+        "chapter_raw": "CHAPTER 40. SANITARIANS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "41",
+        "chapter_raw": "CHAPTER 41. CESSPOOL, SEPTIC TANK, AND PRIVY CLEANERS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "42",
+        "chapter_raw": "CHAPTER 42. WATER TREATMENT PLANT OPERATORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "43",
+        "chapter_raw": "CHAPTER 43. WATER WELL CONTRACTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "45",
+        "chapter_raw": "CHAPTER 45. CONSTRUCTION CONTRACTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "46",
+        "chapter_raw": "CHAPTER 46. ALLIED HEALTH CARE PROFESSIONALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "47",
+        "chapter_raw": "CHAPTER 47. OUTFITTERS AND GUIDES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "48",
+        "chapter_raw": "CHAPTER 48. PRIVATE ALTERNATIVE ADOLESCENT RESIDENTIAL OR OUTDOOR PROGRAMS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "49",
+        "chapter_raw": "CHAPTER 49. GENETIC COUNSELING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "50",
+        "chapter_raw": "CHAPTER 50. PUBLIC ACCOUNTANTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "51",
+        "chapter_raw": "CHAPTER 51. REAL ESTATE BROKERS AND SALESPERSONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "52",
+        "chapter_raw": "CHAPTER 52. TITLE ABSTRACTERS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "53",
+        "chapter_raw": "CHAPTER 53. TIMESHARE SALES(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "54",
+        "chapter_raw": "CHAPTER 54. REAL ESTATE APPRAISERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "55",
+        "chapter_raw": "CHAPTER 55. HOME INSPECTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "56",
+        "chapter_raw": "CHAPTER 56. PROPERTY MANAGERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "60",
+        "chapter_raw": "CHAPTER 60. PRIVATE INVESTIGATORS, PRIVATE SECURITY AND FIRE ENTITIES, AND PROCESS SERVERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "61",
+        "chapter_raw": "CHAPTER 61. ATTORNEYS AT LAW",
+        "statutes": []
+      },
+      {
+        "chapter_num": "62",
+        "chapter_raw": "CHAPTER 62. POLYGRAPH EXAMINERS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "65",
+        "chapter_raw": "CHAPTER 65. ARCHITECTURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "66",
+        "chapter_raw": "CHAPTER 66. LANDSCAPE ARCHITECTURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "67",
+        "chapter_raw": "CHAPTER 67. ENGINEERS AND LAND SURVEYORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "68",
+        "chapter_raw": "CHAPTER 68. ELECTRICIANS AND ELECTRICAL SAFETY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "69",
+        "chapter_raw": "CHAPTER 69. PLUMBERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "70",
+        "chapter_raw": "CHAPTER 70. HEATING, VENTILATION, AIR CONDITIONING (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "71",
+        "chapter_raw": "CHAPTER 71. PUBLIC CONTRACTORS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "72",
+        "chapter_raw": "CHAPTER 72. CONSTRUCTION BLASTING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "73",
+        "chapter_raw": "CHAPTER 73. ELEVATOR CONTRACTORS, MECHANICS, AND INSPECTORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "75",
+        "chapter_raw": "CHAPTER 75. DIRECT-ENTRY MIDWIFERY (Renumbered)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "76",
+        "chapter_raw": "CHAPTER 76. ATHLETIC AGENTS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "77",
+        "chapter_raw": "CHAPTER 77. DOULAS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "78",
+        "chapter_raw": "CHAPTER 78. PHYSICAL, REHABILITATIVE, AND DEVELOPMENTALHEALTH CARE PROFESSIONALS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "39",
+    "title_raw": "TITLE 39. LABOR",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. DEPARTMENT OF LABOR AND INDUSTRY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. THE EMPLOYMENT RELATIONSHIP",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. WAGES AND WAGE PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. HOURS OF LABOR IN CERTAIN EMPLOYMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. THE EMPLOYMENT AGENCY ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. APPRENTICESHIP",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. WOMEN IN EMPLOYMENT DISPLACED HOMEMAKERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. PROFESSIONAL EMPLOYER ORGANIZATIONS AND GROUPS LICENSING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. CONTRACTOR REGISTRATION(Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. WORKFORCE DEVELOPMENT (Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. WORKFORCE TRAINING AND EMPLOYER INCENTIVES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MONTANA HEALTH AND ECONOMIC LIVELIHOOD PARTNERSHIP (HELP) ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "29",
+        "chapter_raw": "CHAPTER 29. VETERANS' EMPLOYMENT PREFERENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. PERSONS WITH DISABILITIES PUBLIC EMPLOYMENT PREFERENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. COLLECTIVE BARGAINING FOR PUBLIC EMPLOYEES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. COLLECTIVE BARGAINING FOR NURSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. GENERAL LIMITATIONS ON COLLECTIVE BARGAINING RIGHTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. ARBITRATION FOR FIREFIGHTERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "51",
+        "chapter_raw": "CHAPTER 51. UNEMPLOYMENT INSURANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "71",
+        "chapter_raw": "CHAPTER 71. WORKERS' COMPENSATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "72",
+        "chapter_raw": "CHAPTER 72. OCCUPATIONAL DISEASE ACT OF MONTANA (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "73",
+        "chapter_raw": "CHAPTER 73. SILICOSIS BENEFITS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "74",
+        "chapter_raw": "CHAPTER 74. CRITICAL INCIDENT STRESS MANAGEMENT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "40",
+    "title_raw": "TITLE 40. FAMILY LAW",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. MARRIAGE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. HUSBAND AND WIFE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RECONCILIATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. TERMINATION OF MARRIAGE, CHILD CUSTODY, SUPPORT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. ENFORCEMENT OF SUPPORT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. PARENT AND CHILD",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. UNIFORM CHILD CUSTODY JURISDICTION AND ENFORCEMENT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ADOPTION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. GRANDPARENT-GRANDCHILD CONTACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. PARTNER AND FAMILY MEMBER ASSAULT, SEXUAL ASSAULT, AND STALKING -- VICTIM PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. FAMILY LAW ARBITRATION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "41",
+    "title_raw": "TITLE 41. MINORS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. RIGHTS AND OBLIGATIONS OF MINORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. CHILD LABOR",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. CHILD ABUSE AND NEGLECT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. INTERSTATE PLACEMENT OF CHILDREN",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. YOUTH COURT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. INTERSTATE COMPACT ON JUVENILES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. MONTANA FAMILY POLICY ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "42",
+    "title_raw": "TITLE 42. ADOPTION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL ADOPTION PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. ADOPTION OF CHILD",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. REQUIREMENTS OF PARTIES IN ADOPTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. PLACEMENTS FOR ADOPTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. LEGAL PROCEEDINGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. RECORDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. FEES AND PROHIBITED ACTIVITIES RELATED TO ADOPTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. LICENSING OF CHILD PLACEMENT AGENCY (Renumbered)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. SUBSIDIZED ADOPTIONS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "44",
+    "title_raw": "TITLE 44. LAW ENFORCEMENT",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. HIGHWAY PATROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. INVESTIGATION, COMMUNICATION, AND IDENTIFICATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. MONTANA FORENSIC SCIENCE SYSTEM ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. MISCELLANEOUS FUNCTIONS OF DEPARTMENT OF JUSTICE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. CRIMINAL JUSTICE INFORMATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. DNA RECORDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. BOARD OF CRIME CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. LAW ENFORCEMENT ACADEMY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. MUTUAL ASSISTANCE RIGHTS OF ASSISTING OFFICERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. SEIZURES RELATED TO CONTROLLED SUBSTANCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. SPECIAL LAW ENFORCEMENT ASSISTANCE FUNDING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. DISPOSITION OF PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. FACIAL RECOGNITION FOR GOVERNMENT USE",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "45",
+    "title_raw": "TITLE 45. CRIMES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PRELIMINARY PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. GENERAL PRINCIPLES OF LIABILITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. JUSTIFIABLE USE OF FORCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. INCHOATE OFFENSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. OFFENSES AGAINST THE PERSON",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. OFFENSES AGAINST PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. OFFENSES AGAINST PUBLIC ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. OFFENSES AGAINST PUBLIC ORDER",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. DANGEROUS DRUGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. MODEL DRUG PARAPHERNALIA ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "46",
+    "title_raw": "TITLE 46. CRIMINAL PROCEDURE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. JURISDICTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. VENUE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. INVESTIGATIVE PROCEDURES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. SEARCH AND SEIZURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. ARREST",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. INITIAL APPEARANCE OF ARRESTED PERSON",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. RIGHT TO COUNSEL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. BAIL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. PRELIMINARY EXAMINATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. COMMENCEMENT OF PROSECUTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. ARRAIGNMENT OF DEFENDANT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. PRETRIAL MOTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. MENTAL COMPETENCY OF ACCUSED",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. PRODUCTION OF EVIDENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. TRIAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. LOWER COURT PROCEEDINGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. SENTENCE AND JUDGMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. EXECUTION OF JUDGMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. APPEALS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. POSTCONVICTION HEARING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. HABEAS CORPUS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. PROBATION, PAROLE, AND CLEMENCY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. TREATMENT OF VICTIMS AND WITNESSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. UNIFORM CRIMINAL EXTRADITION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. INTERSTATE AGREEMENT ON DETAINERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. WRONGFUL CONVICTION(Terminated)",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "47",
+    "title_raw": "TITLE 47. ACCESS TO LEGAL SERVICES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. STATEWIDE PUBLIC DEFENDER SYSTEM",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "49",
+    "title_raw": "TITLE 49. HUMAN RIGHTS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. BASIC RIGHTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. ILLEGAL DISCRIMINATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. GOVERNMENTAL CODE OF FAIR PRACTICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. RIGHTS OF PERSONS WITH DISABILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. DIVERSITY STATEMENTS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "50",
+    "title_raw": "TITLE 50. HEALTH AND SAFETY",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ADMINISTRATION OF PUBLIC HEALTH LAWS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. LOCAL BOARDS OF HEALTH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. STATE FIRE PREVENTION AND INVESTIGATION PROGRAM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. HEALTH CARE POLICY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. HOSPITALS AND RELATED FACILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. EMERGENCY MEDICAL SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. HOME HEALTH AGENCIES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ONE-STEP FACILITY LICENSING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. RIGHTS OF THE TERMINALLY ILL ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. DO NOT RESUSCITATE -- NOTIFICATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. BAN ON REPRODUCTIVE HUMAN CLONING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. TREATMENTS FOR CHRONIC OR TERMINAL ILLNESS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. VITAL STATISTICS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. HEALTH CARE INFORMATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. DISEASE PREVENTION AND CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. SEXUALLY TRANSMITTED DISEASES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. PREGNANT WOMEN AND NEWBORN INFANTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. ABORTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. CADAVERS AND AUTOPSIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. DETERMINATION OF DEATH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. RABIES CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. CONSUMER PRODUCT SAFETY ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. MONTANA FOOD, DRUG, AND COSMETIC ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. CONTROLLED SUBSTANCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. BLOOD AND BLOOD PRODUCTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. FLOUR AND BREAD (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. IMPORTED MEATS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. MATTRESSES -- SHODDY CONTROL (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. FIREWORKS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. EXPLOSIVES (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "39",
+        "chapter_raw": "CHAPTER 39. FIRE PROTECTION EQUIPMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "40",
+        "chapter_raw": "CHAPTER 40. SMOKING IN PUBLIC PLACES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "41",
+        "chapter_raw": "CHAPTER 41. LAETRILE (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "42",
+        "chapter_raw": "CHAPTER 42. DIMETHYL SULFOXIDE (DMSO)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "43",
+        "chapter_raw": "CHAPTER 43. CALCIUM-EAP, HARNOSAL, AND PHOSETAMIN",
+        "statutes": []
+      },
+      {
+        "chapter_num": "44",
+        "chapter_raw": "CHAPTER 44. TREATMENT OF CHRONIC RENAL DISEASE (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "46",
+        "chapter_raw": "CHAPTER 46. USE OF MARIJUANA FOR DEBILITATING MEDICAL CONDITIONS (Repealed and Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "48",
+        "chapter_raw": "CHAPTER 48. LICENSURE AND REGULATION OF TATTOOING AND BODY-PIERCING ESTABLISHMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "49",
+        "chapter_raw": "CHAPTER 49. FOOD AND NUTRITION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "50",
+        "chapter_raw": "CHAPTER 50. RETAIL FOOD ESTABLISHMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "51",
+        "chapter_raw": "CHAPTER 51. HOTELS, MOTELS, AND ROOMINGHOUSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "52",
+        "chapter_raw": "CHAPTER 52. TOURIST CAMPGROUNDS AND TRAILER COURTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "53",
+        "chapter_raw": "CHAPTER 53. PUBLIC SWIMMING POOLS AND SWIMMING AREAS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "57",
+        "chapter_raw": "CHAPTER 57. WHOLESALE FOOD ESTABLISHMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "60",
+        "chapter_raw": "CHAPTER 60. BUILDING CONSTRUCTION STANDARDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "61",
+        "chapter_raw": "CHAPTER 61. FIRE SAFETY IN PUBLIC BUILDINGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "62",
+        "chapter_raw": "CHAPTER 62. FIRE HAZARDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "63",
+        "chapter_raw": "CHAPTER 63. INVESTIGATION OF FIRES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "64",
+        "chapter_raw": "CHAPTER 64. ASBESTOS REGULATION IN BUILDING CONSTRUCTION AND DEMOLITION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "65",
+        "chapter_raw": "CHAPTER 65. CIGARETTE STANDARDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "70",
+        "chapter_raw": "CHAPTER 70. OCCUPATIONAL HEALTH (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "71",
+        "chapter_raw": "CHAPTER 71. OCCUPATIONAL SAFETY AND HEALTH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "72",
+        "chapter_raw": "CHAPTER 72. SAFETY IN MINES OTHER THAN COAL MINES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "73",
+        "chapter_raw": "CHAPTER 73. SAFETY IN COAL MINES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "74",
+        "chapter_raw": "CHAPTER 74. BOILERS AND STEAM ENGINES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "75",
+        "chapter_raw": "CHAPTER 75. CONSOLIDATION OF BOILER, MINE, AND COAL MINE INSPECTORS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "76",
+        "chapter_raw": "CHAPTER 76. HOISTING ENGINES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "77",
+        "chapter_raw": "CHAPTER 77. CONSTRUCTION SITE HEALTH AND SAFETY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "78",
+        "chapter_raw": "CHAPTER 78. EMPLOYEE AND COMMUNITY HAZARDOUS CHEMICAL INFORMATION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "79",
+        "chapter_raw": "CHAPTER 79. NUCLEAR REGULATION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "52",
+    "title_raw": "TITLE 52. FAMILY SERVICES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. CHILDREN'S SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ADULT SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. SERVICES TO THE DISABLED",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. CORRECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. BATTERED SPOUSES(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. MONTANA CHILDREN'S TRUST FUND",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. LICENSING OF CHILD PLACEMENT AGENCY",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "53",
+    "title_raw": "TITLE 53. SOCIAL SERVICES AND INSTITUTIONS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL ADMINISTRATION OF INSTITUTIONS",
+        "statutes": [
+          {
+            "law_id": "2-1-1",
+            "url": "https://mca.legmt.gov/bills/mca/./title_0530/./chapter_0010/./part_0070/sections_index.html"
+          }
+        ]
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. ADMINISTRATION OF PUBLIC ASSISTANCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. GENERAL RELIEF",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. CHILDREN'S SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. ADULT SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. HEALTH CARE SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. VOCATIONAL REHABILITATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ECONOMIC OPPORTUNITY (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. SERVICES FOR VICTIMS OF CRIME",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. ADMINISTRATION OF HUMAN SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. SELF-SUFFICIENCY TRUSTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. PHYSICALLY DISABLED",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. DEVELOPMENTAL DISABILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. MENTALLY ILL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. INTERSTATE COMPACT ON MENTAL HEALTH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. EUGENICAL STERILIZATION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. ALCOHOLISM AND DRUG DEPENDENCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. DISABILITY INDIVIDUAL SAVINGS ACCOUNT PROGRAM",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. CORRECTIONS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "60",
+    "title_raw": "TITLE 60. HIGHWAYS AND TRANSPORTATION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. HIGHWAY CODE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. STATE ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. DISTRIBUTION AND APPORTIONMENT OF HIGHWAY FUNDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. ACQUISITION AND DISPOSITION OF PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. CONTROL OF ACCESS AND INFORMATION SIGNS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. HIGHWAY ENCROACHMENTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. LIVESTOCK ON HIGHWAYS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. RAIL TRANSPORTATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. PUBLIC TRANSPORTATION",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "61",
+    "title_raw": "TITLE 61. MOTOR VEHICLES",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. DEFINITIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. HIGHWAY SAFETY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. CERTIFICATES OF TITLE, REGISTRATION, AND TAXATION OF MOTOR VEHICLES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. SALES AND DISTRIBUTION OF MOTOR VEHICLES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. DRIVER'S LICENSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. RESPONSIBILITY OF VEHICLE USERS AND OWNERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. ACCIDENTS AND ACCIDENT REPORTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. TRAFFIC REGULATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. VEHICLE EQUIPMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. SIZE -- WEIGHT -- LOAD",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. RECORDS AND REPORTS OF CONVICTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MISCELLANEOUS PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. SEATBELTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. RULEMAKING",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "67",
+    "title_raw": "TITLE 67. AERONAUTICS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. DEPARTMENT OF TRANSPORTATION AERONAUTICAL POWERS AND DUTIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. REGULATION AND LICENSING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. NOISE, HEIGHT, AND LAND USE REGULATION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. AIRPORT HAZARD REGULATION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. AIRPORT ZONING ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. AIRPORT AFFECTED AREAS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. MUNICIPAL AIRPORTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. AIRPORT AUTHORITIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "69",
+    "title_raw": "TITLE 69. PUBLIC UTILITIES AND CARRIERS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. STRUCTURE AND ORGANIZATION OF STATE AGENCIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. GENERAL REGULATORY PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. REGULATION OF UTILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. UTILITY LINES AND FACILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. POWER AND ENERGY COMPANIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. COMMUNICATION UTILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. MUNICIPAL UTILITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. ELECTRIC UTILITY INDUSTRY GENERATION REINTEGRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. MONTANA POWER AUTHORITY (Void)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. REGULATION OF CARRIERS(Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MOTOR CARRIERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. PIPELINE CARRIERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. RAILROADS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "70",
+    "title_raw": "TITLE 70. PROPERTY",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. PROPERTY IN GENERAL REAL AND PERSONAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. PERSONAL PROPERTY -- SPECIAL KINDS QUIET TITLE AND PARTITION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. TRANSFER OF PERSONAL PROPERTY -- GIFTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. ACCESSION AND INTERMIXTURE PERSONAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. FINDERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. BAILMENT -- DEPOSIT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. LOANS FOR USE OR EXCHANGE PERSONAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. RENTALS OF PERSONAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. DISPOSITION OF UNCLAIMED PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. DEFINITIONS AND KINDS OF ESTATES IN REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. RIGHTS AND OBLIGATIONS INCIDENTAL TO OWNERSHIP IN REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. SERVITUDES, EASEMENTS, AND COVENANTS RUNNING WITH THE LAND",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. REAL PROPERTY -- ACCESSION FIXTURES AND WATERCOURSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "19",
+        "chapter_raw": "CHAPTER 19. REAL PROPERTY ACTIONS GENERALLY LIMITATIONS AND ADVERSE POSSESSION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. TRANSFER OF REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. RECORDING TRANSFERS AND OTHER TRANSACTIONS RELATING TO REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. CORNER RECORDATION ACT SURVEYS AND COORDINATES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. UNIT OWNERSHIP ACT -- CONDOMINIUMS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. RESIDENTIAL LANDLORD AND TENANT ACT OF 1977",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. RESIDENTIAL TENANTS' SECURITY DEPOSITS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. LANDLORD AND TENANT RESIDENTIAL AND COMMERCIAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. FORCIBLE ENTRY AND DETAINER UNLAWFUL DETAINER",
+        "statutes": []
+      },
+      {
+        "chapter_num": "28",
+        "chapter_raw": "CHAPTER 28. QUIETING TITLE TO REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "29",
+        "chapter_raw": "CHAPTER 29. PARTITION OF REAL PROPERTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. EMINENT DOMAIN",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. RELOCATION ASSISTANCE FAIR TREATMENT OF CONDEMNEES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "32",
+        "chapter_raw": "CHAPTER 32. HOMESTEADS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. MONTANA RESIDENTIAL MOBILE HOME LOT RENTAL ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "71",
+    "title_raw": "TITLE 71. MORTGAGES, PLEDGES, AND LIENS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. MORTGAGES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. PLEDGES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. LIENS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "72",
+    "title_raw": "TITLE 72. ESTATES, TRUSTS, AND FIDUCIARY RELATIONSHIPS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. UNIFORM PROBATE CODE GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. UPC -- INTESTACY, WILLS, AND DONATIVE TRANSFERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. UPC -- PROBATE AND ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. UPC -- FOREIGN PERSONAL REPRESENTATIVES AND ANCILLARY ADMINISTRATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. UPC -- PERSONS UNDER DISABILITY GUARDIANSHIP AND CONSERVATORSHIP",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. NONPROBATE TRANSFERS ON DEATH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. UNIFORM POWERS OF APPOINTMENT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. DISPOSITION OF COMMUNITY PROPERTY RIGHTS AT DEATH",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. SUPPLEMENTARY GENERAL PROVISIONS ON PROBATE AND SUCCESSION (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. INTESTATE SUCCESSION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. PROBATE AND ADMINISTRATION SUPPLEMENTARY PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. PERSONS UNDER DISABILITY SUPPLEMENTARY PROVISIONS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. ESCHEATED ESTATES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. PUBLIC ADMINISTRATOR",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. ESTATE AND GENERATION-SKIPPING TAXES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. ANATOMICAL GIFT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. TRUSTS IN GENERAL (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. TRUSTEES' POWERS ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. CONVEYANCE OF TRUST PROPERTY BY COURT ORDER (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. TRUSTS FOR BENEFIT OF THIRD PERSONS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "24",
+        "chapter_raw": "CHAPTER 24. TRUSTS IN RELATION TO REAL PROPERTY (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. REVISED UNIFORM PRINCIPAL AND INCOME ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. UNIFORM TRANSFERS TO MINORS ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "27",
+        "chapter_raw": "CHAPTER 27. MISCELLANEOUS PROVISIONS RELATING TO TRUSTS (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. MANAGEMENT OF INSTITUTIONAL FUNDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "31",
+        "chapter_raw": "CHAPTER 31. MISCELLANEOUS PROVISIONS RELATING TO FIDUCIARIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "33",
+        "chapter_raw": "CHAPTER 33. TRUST CODE GENERAL PROVISIONS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "34",
+        "chapter_raw": "CHAPTER 34. PRINCIPAL AND INCOME",
+        "statutes": []
+      },
+      {
+        "chapter_num": "35",
+        "chapter_raw": "CHAPTER 35. TRUST CODE -- JUDICIAL PROCEEDINGS CONCERNING TRUSTS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "36",
+        "chapter_raw": "CHAPTER 36. TRUST CODE -- RIGHTS OF THIRD PERSONS (Renumbered and Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "37",
+        "chapter_raw": "CHAPTER 37. FUNERAL PLAN TRUSTS (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "38",
+        "chapter_raw": "CHAPTER 38. MONTANA UNIFORM TRUST CODE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "39",
+        "chapter_raw": "CHAPTER 39. UNIFORM TRUST DECANTING ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "40",
+        "chapter_raw": "CHAPTER 40. UNIFORM DIRECTED TRUST ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "75",
+    "title_raw": "TITLE 75. ENVIRONMENTAL PROTECTION",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ENVIRONMENTAL POLICY AND PROTECTION GENERALLY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. AIR QUALITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RADON CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. WATER QUALITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. PUBLIC WATER SUPPLIES, DISTRIBUTION, AND TREATMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. AQUATIC ECOSYSTEM PROTECTIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. COAL-FIRED GENERATING UNIT REMEDIATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. WASTE AND LITTER CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. UNDERGROUND STORAGE TANKS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. LANDSCAPE MANAGEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. TRANSBOUNDARY POLLUTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. MAJOR FACILITY SITING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. ALTERNATIVE ENERGY LOANS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "26",
+        "chapter_raw": "CHAPTER 26. WIND GENERATION AND SOLAR FACILITIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "76",
+    "title_raw": "TITLE 76. LAND RESOURCES AND USE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. PLANNING BOARDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. PLANNING AND ZONING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. LOCAL REGULATION OF SUBDIVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. STATE REGULATION OF SUBDIVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. FLOOD PLAIN AND FLOODWAY MANAGEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. OPEN SPACES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. ENVIRONMENTAL CONTROL EASEMENT ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. BUILDINGS FOR LEASE OR RENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. SHOOTING RANGES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. REGULATION OF WILDCRAFTING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. NATURAL RESOURCES IN GENERAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. WILD AND SCENIC RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. TIMBER RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. RANGELAND RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. CONSERVATION DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. GRAZING DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "17",
+        "chapter_raw": "CHAPTER 17. PUBLIC LAND ACCESS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. YOUTH CONSERVATION CORPS (Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. SAGE GROUSE HABITAT MANAGEMENT (Renumbered)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. MONTANA LAND USE PLANNING ACT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "77",
+    "title_raw": "TITLE 77. STATE LANDS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ADMINISTRATION OF STATE LANDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. TRANSFERS AND RESERVATIONS OF PROPERTY INTERESTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ROCK, MINERAL, COAL, OIL, AND GAS RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. RENEWABLE RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. TIMBER RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. AGRICULTURAL, GRAZING, AND OTHER SURFACE LEASES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "80",
+    "title_raw": "TITLE 80. AGRICULTURE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. DEPARTMENT OF AGRICULTURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. AGRICULTURAL SERVICES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. PRODUCE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. AGRICULTURAL COMMODITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. AGRICULTURAL SEED AND PATENTED PLANT MATERIAL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. APICULTURE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. DISEASE, PEST, AND WEED CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. PESTICIDES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. COMMERCIAL FEEDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. COMMERCIAL FERTILIZERS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. MARKETING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "12",
+        "chapter_raw": "CHAPTER 12. MONTANA AGRICULTURAL LOAN AUTHORITY ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "13",
+        "chapter_raw": "CHAPTER 13. AGRICULTURAL ASSISTANCE AND COUNSELING PROGRAM (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. PRODUCTION LOAN LINKED DEPOSIT PROGRAM (Terminated)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. MONTANA AGRICULTURAL CHEMICAL GROUND WATER PROTECTION ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "18",
+        "chapter_raw": "CHAPTER 18. ALTERNATIVE AGRICULTURAL CROPS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. AGRICULTURAL RESEARCH",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "81",
+    "title_raw": "TITLE 81. LIVESTOCK",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. DEPARTMENT OF LIVESTOCK",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. DISEASE CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. MARKS AND BRANDS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. CONTAINMENT OF LIVESTOCK",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. UNLAWFUL TRANSPORTING OR DRIVING OF LIVESTOCK",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. LIVESTOCK PROTECTIVE ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. PREDATORY ANIMAL CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. MARKETING",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. SLAUGHTER",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. HORSE OWNER AMNESTY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. POULTRY AND EGGS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "21",
+        "chapter_raw": "CHAPTER 21. DAIRY PRODUCTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "22",
+        "chapter_raw": "CHAPTER 22. MANUFACTURED DAIRY PRODUCTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "23",
+        "chapter_raw": "CHAPTER 23. MILK PRICE CONTROL",
+        "statutes": []
+      },
+      {
+        "chapter_num": "29",
+        "chapter_raw": "CHAPTER 29. RESOURCE AND PROPERTY PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "30",
+        "chapter_raw": "CHAPTER 30. PROTECTION OF FARM ANIMALS AND RESEARCH FACILITIES",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "82",
+    "title_raw": "TITLE 82. MINERALS, OIL, AND GAS",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. MINING GENERALLY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. COAL MINING (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. RECLAMATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. OIL AND GAS -- GENERAL PROVISIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. OIL AND GAS CONSERVATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. REGULATION OF PETROLEUM PRODUCTS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "85",
+    "title_raw": "TITLE 85. WATER USE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. WATER RESOURCES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. SURFACE WATER AND GROUND WATER",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. ATMOSPHERIC WATER WEATHER MODIFICATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. WATER COMMISSIONERS AND WATER MEDIATORS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. WATER USERS' ASSOCIATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. IRRIGATION DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. DRAINAGE DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. CONSERVANCY DISTRICTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. DAM SAFETY ACT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "16",
+        "chapter_raw": "CHAPTER 16. WHARVES AND DOCKS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "20",
+        "chapter_raw": "CHAPTER 20. WATER COMPACTS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "25",
+        "chapter_raw": "CHAPTER 25. COLUMBIA RIVER TREATY ACCOUNT",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "87",
+    "title_raw": "TITLE 87. FISH AND WILDLIFE",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. ORGANIZATION AND OPERATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. FISHING, HUNTING, AND TRAPPING LICENSES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RESTRICTIONS AND REGULATIONS",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. COMMERCIAL ACTIVITIES",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. WILDLIFE PROTECTION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. FISH AND WILDLIFE CRIMINAL PROVISIONS",
+        "statutes": []
+      }
+    ]
+  },
+  {
+    "title_num": "90",
+    "title_raw": "TITLE 90. PLANNING, RESEARCH, AND DEVELOPMENT",
+    "chapters": [
+      {
+        "chapter_num": "1",
+        "chapter_raw": "CHAPTER 1. DEVELOPMENT COORDINATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "2",
+        "chapter_raw": "CHAPTER 2. RESOURCE DEVELOPMENT AND RECLAMATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "3",
+        "chapter_raw": "CHAPTER 3. RESEARCH AND COMMERCIALIZATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "4",
+        "chapter_raw": "CHAPTER 4. ENERGY DEVELOPMENT AND CONSERVATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "5",
+        "chapter_raw": "CHAPTER 5. SECONDARY INDUSTRY AND COMMERCIAL DEVELOPMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "6",
+        "chapter_raw": "CHAPTER 6. COMMUNITY IMPACT -- PLANNING AND ABATEMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "7",
+        "chapter_raw": "CHAPTER 7. FACILITY FINANCE AUTHORITY",
+        "statutes": []
+      },
+      {
+        "chapter_num": "8",
+        "chapter_raw": "CHAPTER 8. MONTANA CAPITAL COMPANY ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "9",
+        "chapter_raw": "CHAPTER 9. AGRICULTURE DEVELOPMENT",
+        "statutes": []
+      },
+      {
+        "chapter_num": "10",
+        "chapter_raw": "CHAPTER 10. MONTANA EQUITY CAPITAL INVESTMENT ACT (Repealed)",
+        "statutes": []
+      },
+      {
+        "chapter_num": "11",
+        "chapter_raw": "CHAPTER 11. INDIAN AFFAIRS PLANNING AND COORDINATION",
+        "statutes": []
+      },
+      {
+        "chapter_num": "14",
+        "chapter_raw": "CHAPTER 14. COMMUNITY SERVICE",
+        "statutes": []
+      },
+      {
+        "chapter_num": "15",
+        "chapter_raw": "CHAPTER 15. NATURAL RESOURCE INFORMATION SYSTEM",
+        "statutes": []
+      }
+    ]
+  }
+]
